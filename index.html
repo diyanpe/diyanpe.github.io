@@ -1,562 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Anya Ramadhani — Data Analyst fresh graduate passionate about turning data into impactful business insights." />
-  <title>Anya Ramadhani | Data Analyst</title>
+  <meta name="description"
+    content="Portfolio of Diyan Pebriyanti — Data Analyst fresh graduate passionate about turning data into impactful business insights." />
+  <title>Diyan Pebriyanti | Data Analyst</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
 </head>
+
 <body>
 
-<!-- Mobile Nav -->
-<div class="mobile-nav" id="mobileNav">
-  <span class="mobile-nav-close" id="mobileNavClose">✕</span>
-  <a href="#projects"     onclick="closeMobileNav()">Projects</a>
-  <a href="#skills"       onclick="closeMobileNav()">Skills</a>
-  <a href="#certificates" onclick="closeMobileNav()">Certifications</a>
-  <a href="#about"        onclick="closeMobileNav()">About</a>
-  <a href="#contact"      onclick="closeMobileNav()">Contact</a>
-</div>
-
-<!-- ===================== NAV ===================== -->
-<nav class="nav" id="mainNav">
-  <div class="container nav-inner">
-    <a href="#" class="nav-logo">Anya<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="#projects"     id="nav-projects">Projects</a></li>
-      <li><a href="#skills"       id="nav-skills">Skills</a></li>
-      <li><a href="#certificates" id="nav-certs">Certifications</a></li>
-      <li><a href="#about"        id="nav-about">About</a></li>
-      <li><a href="#contact" class="nav-cta" id="nav-contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger" onclick="openMobileNav()">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-</nav>
-
-<!-- ===================== HERO ===================== -->
-<section class="hero" id="home">
-  <div class="container hero-content">
-
-    <div class="hero-eyebrow">
-      <div class="hero-eyebrow-line"></div>
-      <span class="hero-eyebrow-text">Data Analyst &nbsp;·&nbsp; Jakarta, Indonesia</span>
-      <div class="hero-eyebrow-line"></div>
-    </div>
-
-    <h1 class="hero-title">
-      Hello, I'm
-      <span class="name">Anya Ramadhani</span>
-    </h1>
-
-    <p class="hero-role">Fresh Graduate &nbsp;·&nbsp; Universitas Indonesia &nbsp;·&nbsp; GPA 3.82</p>
-
-    <p class="hero-desc">
-      I transform <strong>raw data</strong> into <strong>meaningful insights</strong>
-      that drive smarter business decisions. Passionate about data visualization, 
-      machine learning, and analytics storytelling.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#projects" class="hero-btn-primary" id="hero-view-projects">View Projects →</a>
-      <a href="resume.pdf" class="hero-btn-outline" id="hero-download-cv" download>Download CV</a>
-    </div>
-
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hero-stat-num"><span id="counter-projects">0</span><span>+</span></div>
-        <div class="hero-stat-label">Projects Completed</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num"><span id="counter-tools">0</span><span>+</span></div>
-        <div class="hero-stat-label">Tools Mastered</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num"><span id="counter-certs">0</span><span>+</span></div>
-        <div class="hero-stat-label">Certifications</div>
-      </div>
-    </div>
-
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" id="mobileNavClose">✕</span>
+    <a href="#projects" onclick="closeMobileNav()">Projects</a>
+    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="#certificates" onclick="closeMobileNav()">Certifications</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
   </div>
 
-  <div class="hero-scroll">
-    <div class="hero-scroll-text">scroll</div>
-    <div class="hero-scroll-line"></div>
-  </div>
-</section>
-
-
-<!-- ===================== PROJECTS ===================== -->
-<section class="section projects" id="projects">
-  <div class="container">
-    <div class="projects-header reveal">
-      <div class="section-eyebrow">
-        <div class="section-eyebrow-line"></div>
-        <span class="section-eyebrow-text">Portfolio</span>
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="mainNav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">Diyan<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#certificates" id="nav-certs">Certifications</a></li>
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#contact" class="nav-cta" id="nav-contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
       </div>
-      <h2 class="section-title">Selected Projects</h2>
-      <p class="section-desc">Real-world challenges solved with a data-driven approach.</p>
     </div>
+  </nav>
 
-    <div class="projects-grid">
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
 
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-thumb" style="background:#F5EAEC;">🛒</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-py">Python</span>
-            <span class="tag tag-sql">SQL</span>
-            <span class="tag tag-bi">Tableau</span>
-          </div>
-          <h3 class="project-title">Customer Churn Prediction</h3>
-          <p class="project-desc">
-            E-commerce churn model using Random Forest with 91.3% accuracy,
-            paired with a Tableau dashboard for real-time monitoring.
-          </p>
-        </div>
-        <div class="project-footer">
-          <span class="project-meta">Oct 2023 &nbsp;·&nbsp; Accuracy 91.3%</span>
-          <a href="#" class="project-link">View <span>→</span></a>
-        </div>
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="hero-eyebrow-text">Data Analyst &nbsp;·&nbsp; Jakarta, Indonesia</span>
+        <div class="hero-eyebrow-line"></div>
       </div>
 
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-thumb" style="background:#F5EFE5;">💰</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-py">Python</span>
-            <span class="tag tag-ml">ML</span>
-            <span class="tag tag-bi">Power BI</span>
-          </div>
-          <h3 class="project-title">Sales Forecasting Dashboard</h3>
-          <p class="project-desc">
-            Monthly sales prediction using Prophet &amp; ARIMA (MAPE 4.7%)
-            with an integrated Power BI dashboard for executive decisions.
-          </p>
-        </div>
-        <div class="project-footer">
-          <span class="project-meta">Aug 2023 &nbsp;·&nbsp; MAPE 4.7%</span>
-          <a href="#" class="project-link">View <span>→</span></a>
-        </div>
+      <h1 class="hero-title">
+        Hello, I'm
+        <span class="name">Diyan Pebriyanti</span>
+      </h1>
+
+      <p class="hero-role">Fresh Graduate &nbsp;·&nbsp; Universitas Indonesia &nbsp;·&nbsp; GPA 3.82</p>
+
+      <p class="hero-desc">
+        I transform <strong>raw data</strong> into <strong>meaningful insights</strong>
+        that drive smarter business decisions. Passionate about data visualization,
+        machine learning, and analytics storytelling.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="hero-btn-primary" id="hero-view-projects">View Projects →</a>
+        <a href="resume.pdf" class="hero-btn-outline" id="hero-download-cv" download>Download CV</a>
       </div>
 
-      <div class="project-card reveal reveal-delay-3">
-        <div class="project-thumb" style="background:#EAF0EA;">🗺️</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-py">Python</span>
-            <span class="tag tag-sql">SQL</span>
-          </div>
-          <h3 class="project-title">Indonesia Poverty EDA</h3>
-          <p class="project-desc">
-            Exploratory analysis of BPS data on poverty distribution across 34 provinces
-            using geospatial visualization with Geopandas &amp; Folium.
-          </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num"><span id="counter-projects">0</span><span>+</span></div>
+          <div class="hero-stat-label">Projects Completed</div>
         </div>
-        <div class="project-footer">
-          <span class="project-meta">Jun 2023 &nbsp;·&nbsp; 34 Provinces</span>
-          <a href="#" class="project-link">View <span>→</span></a>
+        <div class="hero-stat">
+          <div class="hero-stat-num"><span id="counter-tools">0</span><span>+</span></div>
+          <div class="hero-stat-label">Tools Mastered</div>
         </div>
-      </div>
-
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-thumb" style="background:#F5EAEC;">🏥</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-ml">ML</span>
-            <span class="tag tag-py">Python</span>
-          </div>
-          <h3 class="project-title">Heart Disease Classification</h3>
-          <p class="project-desc">
-            End-to-end ML pipeline for heart disease risk classification using XGBoost
-            with hyperparameter tuning, achieving an F1-Score of 0.89.
-          </p>
-        </div>
-        <div class="project-footer">
-          <span class="project-meta">Mar 2023 &nbsp;·&nbsp; F1-Score 0.89</span>
-          <a href="#" class="project-link">View <span>→</span></a>
-        </div>
-      </div>
-
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-thumb" style="background:#EAF0EA;">🏨</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-sql">SQL</span>
-            <span class="tag tag-bi">Tableau</span>
-          </div>
-          <h3 class="project-title">Hotel Revenue Analytics</h3>
-          <p class="project-desc">
-            Revenue and occupancy rate analysis using complex SQL queries.
-            Seasonal pattern identification that boosted revenue insights by 12%.
-          </p>
-        </div>
-        <div class="project-footer">
-          <span class="project-meta">Nov 2023 &nbsp;·&nbsp; +12% Revenue</span>
-          <a href="#" class="project-link">View <span>→</span></a>
-        </div>
-      </div>
-
-      <div class="project-card reveal reveal-delay-3">
-        <div class="project-thumb" style="background:#EEE8F5;">💬</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-py">Python</span>
-            <span class="tag tag-ml">NLP</span>
-          </div>
-          <h3 class="project-title">Product Review Sentiment Analysis</h3>
-          <p class="project-desc">
-            Sentiment analysis using Indonesian BERT on 200K+ marketplace reviews
-            with 88.7% accuracy for product insight generation.
-          </p>
-        </div>
-        <div class="project-footer">
-          <span class="project-meta">Jan 2024 &nbsp;·&nbsp; 200K+ Reviews</span>
-          <a href="#" class="project-link">View <span>→</span></a>
+        <div class="hero-stat">
+          <div class="hero-stat-num"><span id="counter-certs">0</span><span>+</span></div>
+          <div class="hero-stat-label">Certifications</div>
         </div>
       </div>
 
     </div>
-  </div>
-</section>
 
-<!-- ===================== SKILLS ===================== -->
-<section class="section skills" id="skills">
-  <div class="container">
-    <div class="skills-header">
+    <div class="hero-scroll">
+      <div class="hero-scroll-text">scroll</div>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="projects-header reveal">
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <span class="section-eyebrow-text">Portfolio</span>
+        </div>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-desc">Real-world challenges solved with a data-driven approach.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumb" style="background:#F5EAEC;">🛒</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-py">Python</span>
+              <span class="tag tag-sql">SQL</span>
+              <span class="tag tag-bi">Tableau</span>
+            </div>
+            <h3 class="project-title">Customer Churn Prediction</h3>
+            <p class="project-desc">
+              E-commerce churn model using Random Forest with 91.3% accuracy,
+              paired with a Tableau dashboard for real-time monitoring.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Oct 2023 &nbsp;·&nbsp; Accuracy 91.3%</span>
+            <a href="#" class="project-link">View <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-thumb" style="background:#F5EFE5;">💰</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-py">Python</span>
+              <span class="tag tag-ml">ML</span>
+              <span class="tag tag-bi">Power BI</span>
+            </div>
+            <h3 class="project-title">Sales Forecasting Dashboard</h3>
+            <p class="project-desc">
+              Monthly sales prediction using Prophet &amp; ARIMA (MAPE 4.7%)
+              with an integrated Power BI dashboard for executive decisions.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Aug 2023 &nbsp;·&nbsp; MAPE 4.7%</span>
+            <a href="#" class="project-link">View <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-thumb" style="background:#EAF0EA;">🗺️</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-py">Python</span>
+              <span class="tag tag-sql">SQL</span>
+            </div>
+            <h3 class="project-title">Indonesia Poverty EDA</h3>
+            <p class="project-desc">
+              Exploratory analysis of BPS data on poverty distribution across 34 provinces
+              using geospatial visualization with Geopandas &amp; Folium.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Jun 2023 &nbsp;·&nbsp; 34 Provinces</span>
+            <a href="#" class="project-link">View <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumb" style="background:#F5EAEC;">🏥</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-ml">ML</span>
+              <span class="tag tag-py">Python</span>
+            </div>
+            <h3 class="project-title">Heart Disease Classification</h3>
+            <p class="project-desc">
+              End-to-end ML pipeline for heart disease risk classification using XGBoost
+              with hyperparameter tuning, achieving an F1-Score of 0.89.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Mar 2023 &nbsp;·&nbsp; F1-Score 0.89</span>
+            <a href="#" class="project-link">View <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-thumb" style="background:#EAF0EA;">🏨</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-sql">SQL</span>
+              <span class="tag tag-bi">Tableau</span>
+            </div>
+            <h3 class="project-title">Hotel Revenue Analytics</h3>
+            <p class="project-desc">
+              Revenue and occupancy rate analysis using complex SQL queries.
+              Seasonal pattern identification that boosted revenue insights by 12%.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Nov 2023 &nbsp;·&nbsp; +12% Revenue</span>
+            <a href="#" class="project-link">View <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-3">
+          <div class="project-thumb" style="background:#EEE8F5;">💬</div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-py">Python</span>
+              <span class="tag tag-ml">NLP</span>
+            </div>
+            <h3 class="project-title">Product Review Sentiment Analysis</h3>
+            <p class="project-desc">
+              Sentiment analysis using Indonesian BERT on 200K+ marketplace reviews
+              with 88.7% accuracy for product insight generation.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Jan 2024 &nbsp;·&nbsp; 200K+ Reviews</span>
+            <a href="#" class="project-link">View <span>→</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="skills-header">
+        <div class="reveal">
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Technical Skills</span>
+          </div>
+          <h2 class="section-title">Tech Stack &amp; Tools</h2>
+        </div>
+        <p class="section-desc reveal reveal-delay-2">
+          A blend of technical depth and analytical thinking to deliver actionable insights.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-row reveal reveal-delay-1" data-pct="90">
+          <div class="skill-icon-box">🐍</div>
+          <div class="skill-info">
+            <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">90%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row reveal reveal-delay-2" data-pct="85">
+          <div class="skill-icon-box">🗄️</div>
+          <div class="skill-info">
+            <div class="skill-top"><span class="skill-name">SQL</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row reveal reveal-delay-1" data-pct="80">
+          <div class="skill-icon-box">📊</div>
+          <div class="skill-info">
+            <div class="skill-top"><span class="skill-name">Tableau</span><span class="skill-pct">80%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row reveal reveal-delay-2" data-pct="75">
+          <div class="skill-icon-box">📈</div>
+          <div class="skill-info">
+            <div class="skill-top"><span class="skill-name">Power BI</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row reveal reveal-delay-1" data-pct="82">
+          <div class="skill-icon-box">🐼</div>
+          <div class="skill-info">
+            <div class="skill-top"><span class="skill-name">Pandas &amp; NumPy</span><span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row reveal reveal-delay-2" data-pct="78">
+          <div class="skill-icon-box">🔬</div>
+          <div class="skill-info">
+            <div class="skill-top"><span class="skill-name">Scikit-learn</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row reveal reveal-delay-1" data-pct="72">
+          <div class="skill-icon-box">📉</div>
+          <div class="skill-info">
+            <div class="skill-top"><span class="skill-name">Matplotlib / Seaborn</span><span
+                class="skill-pct">72%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-row reveal reveal-delay-2" data-pct="68">
+          <div class="skill-icon-box">☁️</div>
+          <div class="skill-info">
+            <div class="skill-top"><span class="skill-name">BigQuery</span><span class="skill-pct">68%</span></div>
+            <div class="skill-bar-bg">
+              <div class="skill-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="section certifications" id="certificates">
+    <div class="container">
       <div class="reveal">
         <div class="section-eyebrow">
           <div class="section-eyebrow-line"></div>
-          <span class="section-eyebrow-text">Technical Skills</span>
+          <span class="section-eyebrow-text">Certifications</span>
         </div>
-        <h2 class="section-title">Tech Stack &amp; Tools</h2>
+        <h2 class="section-title">Credentials &amp; Recognition</h2>
       </div>
-      <p class="section-desc reveal reveal-delay-2">
-        A blend of technical depth and analytical thinking to deliver actionable insights.
-      </p>
-    </div>
 
-    <div class="skills-grid">
-      <div class="skill-row reveal reveal-delay-1" data-pct="90">
-        <div class="skill-icon-box">🐍</div>
-        <div class="skill-info">
-          <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">90%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar"></div></div>
+      <div class="cert-grid">
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon g">🧠</div>
+          <div>
+            <div class="cert-name">Google Data Analytics</div>
+            <div class="cert-issuer">Google &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2023</div>
+          </div>
         </div>
-      </div>
-      <div class="skill-row reveal reveal-delay-2" data-pct="85">
-        <div class="skill-icon-box">🗄️</div>
-        <div class="skill-info">
-          <div class="skill-top"><span class="skill-name">SQL</span><span class="skill-pct">85%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar"></div></div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon ms">⚡</div>
+          <div>
+            <div class="cert-name">Microsoft Power BI Analyst</div>
+            <div class="cert-issuer">Microsoft &nbsp;·&nbsp; PL-300 &nbsp;·&nbsp; 2023</div>
+          </div>
         </div>
-      </div>
-      <div class="skill-row reveal reveal-delay-1" data-pct="80">
-        <div class="skill-icon-box">📊</div>
-        <div class="skill-info">
-          <div class="skill-top"><span class="skill-name">Tableau</span><span class="skill-pct">80%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar"></div></div>
+        <div class="cert-card reveal reveal-delay-3">
+          <div class="cert-icon ibm">🔬</div>
+          <div>
+            <div class="cert-name">IBM Data Science Professional</div>
+            <div class="cert-issuer">IBM &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2022</div>
+          </div>
         </div>
-      </div>
-      <div class="skill-row reveal reveal-delay-2" data-pct="75">
-        <div class="skill-icon-box">📈</div>
-        <div class="skill-info">
-          <div class="skill-top"><span class="skill-name">Power BI</span><span class="skill-pct">75%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar"></div></div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon dice">📊</div>
+          <div>
+            <div class="cert-name">Tableau Desktop Specialist</div>
+            <div class="cert-issuer">Tableau &nbsp;·&nbsp; Official &nbsp;·&nbsp; 2023</div>
+          </div>
         </div>
-      </div>
-      <div class="skill-row reveal reveal-delay-1" data-pct="82">
-        <div class="skill-icon-box">🐼</div>
-        <div class="skill-info">
-          <div class="skill-top"><span class="skill-name">Pandas &amp; NumPy</span><span class="skill-pct">82%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar"></div></div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon g">☁️</div>
+          <div>
+            <div class="cert-name">Google Cloud Associate</div>
+            <div class="cert-issuer">Google Cloud &nbsp;·&nbsp; ACE &nbsp;·&nbsp; 2024</div>
+          </div>
         </div>
-      </div>
-      <div class="skill-row reveal reveal-delay-2" data-pct="78">
-        <div class="skill-icon-box">🔬</div>
-        <div class="skill-info">
-          <div class="skill-top"><span class="skill-name">Scikit-learn</span><span class="skill-pct">78%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar"></div></div>
-        </div>
-      </div>
-      <div class="skill-row reveal reveal-delay-1" data-pct="72">
-        <div class="skill-icon-box">📉</div>
-        <div class="skill-info">
-          <div class="skill-top"><span class="skill-name">Matplotlib / Seaborn</span><span class="skill-pct">72%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar"></div></div>
-        </div>
-      </div>
-      <div class="skill-row reveal reveal-delay-2" data-pct="68">
-        <div class="skill-icon-box">☁️</div>
-        <div class="skill-info">
-          <div class="skill-top"><span class="skill-name">BigQuery</span><span class="skill-pct">68%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar"></div></div>
+        <div class="cert-card reveal reveal-delay-3">
+          <div class="cert-icon ms">🤖</div>
+          <div>
+            <div class="cert-name">ML Specialization</div>
+            <div class="cert-issuer">Andrew Ng &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2022</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===================== CERTIFICATIONS ===================== -->
-<section class="section certifications" id="certificates">
-  <div class="container">
-    <div class="reveal">
-      <div class="section-eyebrow">
-        <div class="section-eyebrow-line"></div>
-        <span class="section-eyebrow-text">Certifications</span>
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Bio -->
+        <div class="reveal">
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">About Me</span>
+          </div>
+          <h2 class="section-title">Analyst who thinks like a <span class="italic-accent">storyteller</span></h2>
+          <div class="divider"></div>
+
+          <div class="about-text">
+            <p>
+              I'm a <strong>Statistics graduate from Universitas Indonesia</strong> with a GPA of 3.82/4.00.
+              Throughout my studies I worked on real-world data projects — from customer churn models
+              to operational business dashboards.
+            </p>
+            <p>
+              I believe data is more than numbers — it's a story waiting to be told.
+              My strength lies in blending rigorous analysis with clear, compelling communication.
+            </p>
+          </div>
+
+          <div class="about-pills">
+            <span class="pill pill-m">Data Visualization</span>
+            <span class="pill pill-m">Machine Learning</span>
+            <span class="pill pill-c">Business Intelligence</span>
+            <span class="pill pill-c">SQL &amp; Databases</span>
+            <span class="pill pill-c">Python</span>
+            <span class="pill pill-c">Statistical Analysis</span>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="reveal reveal-delay-2">
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Education &amp; Experience</span>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot">🎓</div>
+              <div>
+                <div class="timeline-degree">B.Sc. Statistics</div>
+                <div class="timeline-school">Universitas Indonesia &nbsp;·&nbsp; GPA 3.82 / 4.00</div>
+                <div class="timeline-year">2020 – 2024</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">💼</div>
+              <div>
+                <div class="timeline-degree">Data Analyst Intern</div>
+                <div class="timeline-school">PT Tokopedia Tbk &nbsp;·&nbsp; Analytics Division</div>
+                <div class="timeline-year">Jun – Dec 2023</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">📚</div>
+              <div>
+                <div class="timeline-degree">Data Science Bootcamp</div>
+                <div class="timeline-school">RevoU &nbsp;·&nbsp; Full Stack Data Analytics</div>
+                <div class="timeline-year">Feb – May 2023</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot">🏆</div>
+              <div>
+                <div class="timeline-degree">Data Competition Finalist</div>
+                <div class="timeline-school">Gemastik XVI &nbsp;·&nbsp; Data Mining Category</div>
+                <div class="timeline-year">2023</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <h2 class="section-title">Credentials &amp; Recognition</h2>
     </div>
+  </section>
 
-    <div class="cert-grid">
-      <div class="cert-card reveal reveal-delay-1">
-        <div class="cert-icon g">🧠</div>
-        <div>
-          <div class="cert-name">Google Data Analytics</div>
-          <div class="cert-issuer">Google &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2023</div>
-        </div>
-      </div>
-      <div class="cert-card reveal reveal-delay-2">
-        <div class="cert-icon ms">⚡</div>
-        <div>
-          <div class="cert-name">Microsoft Power BI Analyst</div>
-          <div class="cert-issuer">Microsoft &nbsp;·&nbsp; PL-300 &nbsp;·&nbsp; 2023</div>
-        </div>
-      </div>
-      <div class="cert-card reveal reveal-delay-3">
-        <div class="cert-icon ibm">🔬</div>
-        <div>
-          <div class="cert-name">IBM Data Science Professional</div>
-          <div class="cert-issuer">IBM &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2022</div>
-        </div>
-      </div>
-      <div class="cert-card reveal reveal-delay-1">
-        <div class="cert-icon dice">📊</div>
-        <div>
-          <div class="cert-name">Tableau Desktop Specialist</div>
-          <div class="cert-issuer">Tableau &nbsp;·&nbsp; Official &nbsp;·&nbsp; 2023</div>
-        </div>
-      </div>
-      <div class="cert-card reveal reveal-delay-2">
-        <div class="cert-icon g">☁️</div>
-        <div>
-          <div class="cert-name">Google Cloud Associate</div>
-          <div class="cert-issuer">Google Cloud &nbsp;·&nbsp; ACE &nbsp;·&nbsp; 2024</div>
-        </div>
-      </div>
-      <div class="cert-card reveal reveal-delay-3">
-        <div class="cert-icon ms">🤖</div>
-        <div>
-          <div class="cert-name">ML Specialization</div>
-          <div class="cert-issuer">Andrew Ng &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2022</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== ABOUT ===================== -->
-<section class="section about" id="about">
-  <div class="container">
-    <div class="about-grid">
-
-      <!-- Bio -->
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
       <div class="reveal">
-        <div class="section-eyebrow">
+        <div class="section-eyebrow" style="justify-content:center;">
           <div class="section-eyebrow-line"></div>
-          <span class="section-eyebrow-text">About Me</span>
-        </div>
-        <h2 class="section-title">Analyst who thinks like a <span class="italic-accent">storyteller</span></h2>
-        <div class="divider"></div>
-
-        <div class="about-text">
-          <p>
-            I'm a <strong>Statistics graduate from Universitas Indonesia</strong> with a GPA of 3.82/4.00.
-            Throughout my studies I worked on real-world data projects — from customer churn models
-            to operational business dashboards.
-          </p>
-          <p>
-            I believe data is more than numbers — it's a story waiting to be told.
-            My strength lies in blending rigorous analysis with clear, compelling communication.
-          </p>
-        </div>
-
-        <div class="about-pills">
-          <span class="pill pill-m">Data Visualization</span>
-          <span class="pill pill-m">Machine Learning</span>
-          <span class="pill pill-c">Business Intelligence</span>
-          <span class="pill pill-c">SQL &amp; Databases</span>
-          <span class="pill pill-c">Python</span>
-          <span class="pill pill-c">Statistical Analysis</span>
-        </div>
-      </div>
-
-      <!-- Timeline -->
-      <div class="reveal reveal-delay-2">
-        <div class="section-eyebrow">
+          <span class="section-eyebrow-text">Get In Touch</span>
           <div class="section-eyebrow-line"></div>
-          <span class="section-eyebrow-text">Education &amp; Experience</span>
         </div>
+        <h2 class="section-title" style="text-align:center;">Let's Work Together</h2>
+        <p class="section-desc" style="margin:0 auto;text-align:center;">
+          Open to full-time roles, freelance projects, and research collaborations.
+        </p>
+      </div>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot">🎓</div>
-            <div>
-              <div class="timeline-degree">B.Sc. Statistics</div>
-              <div class="timeline-school">Universitas Indonesia &nbsp;·&nbsp; GPA 3.82 / 4.00</div>
-              <div class="timeline-year">2020 – 2024</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot">💼</div>
-            <div>
-              <div class="timeline-degree">Data Analyst Intern</div>
-              <div class="timeline-school">PT Tokopedia Tbk &nbsp;·&nbsp; Analytics Division</div>
-              <div class="timeline-year">Jun – Dec 2023</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot">📚</div>
-            <div>
-              <div class="timeline-degree">Data Science Bootcamp</div>
-              <div class="timeline-school">RevoU &nbsp;·&nbsp; Full Stack Data Analytics</div>
-              <div class="timeline-year">Feb – May 2023</div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot">🏆</div>
-            <div>
-              <div class="timeline-degree">Data Competition Finalist</div>
-              <div class="timeline-school">Gemastik XVI &nbsp;·&nbsp; Data Mining Category</div>
-              <div class="timeline-year">2023</div>
-            </div>
-          </div>
+      <div class="contact-card reveal reveal-delay-2">
+        <h3>Say Hello 👋</h3>
+        <p>Typical response time &lt; 24 hours. I'd love to hear about your data challenges.</p>
+        <div class="contact-links">
+          <a href="mailto:pebriyantidiya@gmail.com" class="contact-link" id="contact-email">
+            ✉️ &nbsp;pebriyantidiya@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/diyan-pebriyanti" class="contact-link" id="contact-linkedin" target="_blank"
+            rel="noopener">
+            🔗 &nbsp;LinkedIn
+          </a>
+          <a href="https://github.com/diyan-pebriyanti" class="contact-link" id="contact-github" target="_blank"
+            rel="noopener">
+            ⟨/⟩ &nbsp;GitHub
+          </a>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===================== CONTACT ===================== -->
-<section class="section contact" id="contact">
-  <div class="container contact-inner">
-    <div class="reveal">
-      <div class="section-eyebrow" style="justify-content:center;">
-        <div class="section-eyebrow-line"></div>
-        <span class="section-eyebrow-text">Get In Touch</span>
-        <div class="section-eyebrow-line"></div>
-      </div>
-      <h2 class="section-title" style="text-align:center;">Let's Work Together</h2>
-      <p class="section-desc" style="margin:0 auto;text-align:center;">
-        Open to full-time roles, freelance projects, and research collaborations.
-      </p>
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <p>© 2024 <strong>Diyan Pebriyanti</strong> &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; Jakarta, Indonesia</p>
     </div>
+  </footer>
 
-    <div class="contact-card reveal reveal-delay-2">
-      <h3>Say Hello 👋</h3>
-      <p>Typical response time &lt; 24 hours. I'd love to hear about your data challenges.</p>
-      <div class="contact-links">
-        <a href="mailto:anya.ramadhani@gmail.com" class="contact-link" id="contact-email">
-          ✉️ &nbsp;anya.ramadhani@gmail.com
-        </a>
-        <a href="https://linkedin.com/in/anyaramadhani" class="contact-link" id="contact-linkedin" target="_blank" rel="noopener">
-          🔗 &nbsp;LinkedIn
-        </a>
-        <a href="https://github.com/anyaramadhani" class="contact-link" id="contact-github" target="_blank" rel="noopener">
-          ⟨/⟩ &nbsp;GitHub
-        </a>
-        <a href="https://kaggle.com/anyaramadhani" class="contact-link" id="contact-kaggle" target="_blank" rel="noopener">
-          📊 &nbsp;Kaggle
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    // ── Sticky Nav ───────────────────────────────────────────
+    const mainNav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      mainNav.classList.toggle('scrolled', window.scrollY > 60);
+      updateActiveNav();
+    });
 
-<!-- ===================== FOOTER ===================== -->
-<footer>
-  <div class="container">
-    <p>© 2024 <strong>Anya Ramadhani</strong> &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; Jakarta, Indonesia</p>
-  </div>
-</footer>
-
-<!-- ===================== SCRIPTS ===================== -->
-<script>
-// ── Sticky Nav ───────────────────────────────────────────
-const mainNav = document.getElementById('mainNav');
-window.addEventListener('scroll', () => {
-  mainNav.classList.toggle('scrolled', window.scrollY > 60);
-  updateActiveNav();
-});
-
-// ── Active Nav ───────────────────────────────────────────
-function updateActiveNav() {
-  const ids   = ['projects','skills','certificates','about','contact'];
-  const links = { projects:'nav-projects', skills:'nav-skills', certificates:'nav-certs', about:'nav-about', contact:'nav-contact' };
-  let current = '';
-  ids.forEach(id => {
-    const el = document.getElementById(id);
-    if (el && window.scrollY >= el.offsetTop - 160) current = id;
-  });
-  ids.forEach(id => {
-    const a = document.getElementById(links[id]);
-    if (a) a.classList.toggle('active', id === current);
-  });
-}
-
-// ── Mobile Nav ───────────────────────────────────────────
-function openMobileNav()  { document.getElementById('mobileNav').classList.add('open'); }
-function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
-document.getElementById('mobileNavClose').onclick = closeMobileNav;
-
-// ── Scroll Reveal ────────────────────────────────────────
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      // skill bars
-      const bar = entry.target.querySelector('.skill-bar');
-      if (bar && !bar.dataset.animated) {
-        const pct = entry.target.dataset.pct || 0;
-        setTimeout(() => { bar.style.width = pct + '%'; }, 200);
-        bar.dataset.animated = '1';
-      }
+    // ── Active Nav ───────────────────────────────────────────
+    function updateActiveNav() {
+      const ids = ['projects', 'skills', 'certificates', 'about', 'contact'];
+      const links = { projects: 'nav-projects', skills: 'nav-skills', certificates: 'nav-certs', about: 'nav-about', contact: 'nav-contact' };
+      let current = '';
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && window.scrollY >= el.offsetTop - 160) current = id;
+      });
+      ids.forEach(id => {
+        const a = document.getElementById(links[id]);
+        if (a) a.classList.toggle('active', id === current);
+      });
     }
-  });
-}, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal, .skill-row').forEach(el => observer.observe(el));
+    // ── Mobile Nav ───────────────────────────────────────────
+    function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); }
+    function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
+    document.getElementById('mobileNavClose').onclick = closeMobileNav;
 
-// ── Counter Animation ────────────────────────────────────
-function animateCounter(id, target) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  let current = 0;
-  const step  = target / 45;
-  const timer = setInterval(() => {
-    current += step;
-    if (current >= target) { el.textContent = target; clearInterval(timer); return; }
-    el.textContent = Math.floor(current);
-  }, 28);
-}
+    // ── Scroll Reveal ────────────────────────────────────────
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // skill bars
+          const bar = entry.target.querySelector('.skill-bar');
+          if (bar && !bar.dataset.animated) {
+            const pct = entry.target.dataset.pct || 0;
+            setTimeout(() => { bar.style.width = pct + '%'; }, 200);
+            bar.dataset.animated = '1';
+          }
+        }
+      });
+    }, { threshold: 0.12 });
 
-const counterObs = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounter('counter-projects', 12);
-      animateCounter('counter-tools',    10);
-      animateCounter('counter-certs',     6);
-      counterObs.disconnect();
+    document.querySelectorAll('.reveal, .skill-row').forEach(el => observer.observe(el));
+
+    // ── Counter Animation ────────────────────────────────────
+    function animateCounter(id, target) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      let current = 0;
+      const step = target / 45;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { el.textContent = target; clearInterval(timer); return; }
+        el.textContent = Math.floor(current);
+      }, 28);
     }
-  });
-}, { threshold: 0.5 });
 
-const heroStat = document.querySelector('.hero-stats');
-if (heroStat) counterObs.observe(heroStat);
-</script>
+    const counterObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter('counter-projects', 12);
+          animateCounter('counter-tools', 10);
+          animateCounter('counter-certs', 6);
+          counterObs.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const heroStat = document.querySelector('.hero-stats');
+    if (heroStat) counterObs.observe(heroStat);
+  </script>
 </body>
+
 </html>
