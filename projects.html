@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="All Projects & Portfolio of Diyan Pebriyanti — Filter by Data Analyst, System Analyst, and Fullstack Developer." />
+  <title>Projects | Diyan Pebriyanti</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="mobile-nav-close" id="mobileNavClose">✕</span>
+    <a href="projects.html" onclick="closeMobileNav()" style="color:var(--maroon);">Projects</a>
+    <a href="index.html#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="index.html#certificates" onclick="closeMobileNav()">Certifications</a>
+    <a href="index.html#about" onclick="closeMobileNav()">About</a>
+    <a href="index.html#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav scrolled" id="mainNav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" style="color:var(--text-dark);">Diyan<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#certificates">Certifications</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HEADER BANNER ===================== -->
+  <header style="background:var(--grad-bg); padding: 130px 0 60px 0; color:#fff; position:relative; overflow:hidden;">
+    <div class="container" style="position:relative; z-index:2;">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="hero-eyebrow-text">Portfolio Showcase</span>
+        <div class="hero-eyebrow-line"></div>
+      </div>
+      <h1 class="hero-title" style="font-size:clamp(2.2rem, 4.5vw, 3.4rem); margin-bottom: 12px;">
+        All Projects &amp; Case Studies
+      </h1>
+      <p class="hero-desc" style="max-width: 650px; font-size:1.05rem; opacity:0.9; margin-bottom:0;">
+        Explore end-to-end data analytics, machine learning pipelines, system analysis workflows, and full-stack web
+        applications.
+      </p>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN PROJECTS SECTION ===================== -->
+  <main class="section projects" style="min-height: 60vh; padding: 60px 0 90px 0;">
+    <div class="container">
+
+      <!-- Filter Controls Bar -->
+      <div class="filter-wrapper reveal">
+        <div class="filter-pills" id="filterPills">
+          <button class="filter-btn active" data-filter="all" onclick="filterProjects('all', this)">
+            All Projects <span class="filter-count" id="count-all">6</span>
+          </button>
+          <button class="filter-btn" data-filter="data-analyst" onclick="filterProjects('data-analyst', this)">
+            📊 Data Analyst <span class="filter-count" id="count-da">4</span>
+          </button>
+          <button class="filter-btn" data-filter="system-analyst" onclick="filterProjects('system-analyst', this)">
+            📑 System Analyst <span class="filter-count" id="count-sa">2</span>
+          </button>
+          <button class="filter-btn" data-filter="fullstack" onclick="filterProjects('fullstack', this)">
+            💻 Fullstack Developer <span class="filter-count" id="count-fs">2</span>
+          </button>
+        </div>
+        <span class="filter-result-info" id="filterResultInfo">Showing 6 projects</span>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="allProjectsGrid">
+
+        <!-- Project 1: Sentiment Analysis -->
+        <div class="project-card reveal reveal-delay-1" data-category="data-analyst">
+          <div class="project-thumb">
+            <img src="assets/projects/sentiment-analysis.png" alt="Multiplatform Sentiment Analysis" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="project-category-badge">Data Analyst</span>
+            <h3 class="project-title">Multiplatform Sentiment Analysis</h3>
+            <div class="project-tags">
+              <span class="tag tag-py">Python</span>
+              <span class="tag tag-ml">Data Scraping</span>
+              <span class="tag tag-ml">NLP</span>
+              <span class="tag tag-ml">Deep Learning</span>
+              <span class="tag tag-ml">Machine Learning</span>
+            </div>
+            <p class="project-desc">
+              Comparative sentiment analysis on 172,000+ comments across Facebook, Instagram, TikTok, X, and YouTube
+              with 95.2% accuracy.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Aug 2026 &nbsp;·&nbsp; Thesis</span>
+            <a href="#" class="project-link" onclick="openProjectModal('sentiment'); return false;">View
+              <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Project 2: Langflow AI Agent -->
+        <div class="project-card reveal reveal-delay-2" data-category="data-analyst">
+          <div class="project-thumb">
+            <img src="assets/projects/langflow.png" alt="Develop an AI Agent using Langflow" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="project-category-badge">Data Analyst</span>
+            <h3 class="project-title">Develop an AI Agent using Langflow</h3>
+            <div class="project-tags">
+              <span class="tag tag-ml">Langflow</span>
+              <span class="tag tag-ml">AI Agents</span>
+              <span class="tag tag-ml">Business Analysis</span>
+              <span class="tag tag-ml">Automated Insights</span>
+            </div>
+            <p class="project-desc">
+              Automated AI agent parsing customer feedback CSV datasets to classify sentiments, extract core themes, and
+              generate executive summaries.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Aug 2026 &nbsp;·&nbsp; Hacktiv8 x IBM</span>
+            <a href="#" class="project-link" onclick="openProjectModal('langflow'); return false;">View
+              <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Project 3: OHS Service Information System -->
+        <div class="project-card reveal reveal-delay-3" data-category="system-analyst fullstack">
+          <div class="project-thumb">
+            <img src="assets/projects/pt-katiga.png" alt="Occupational Health and Safety (OHS) Information System"
+              loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="project-category-badge">System Analyst &amp; Fullstack</span>
+            <h3 class="project-title">Occupational Health and Safety (OHS) Information System</h3>
+            <div class="project-tags">
+              <span class="tag tag-ml">Draw.io</span>
+              <span class="tag tag-ml">Process Modeling</span>
+              <span class="tag tag-py">Laravel</span>
+              <span class="tag tag-ml">JavaScript</span>
+              <span class="tag tag-sql">MySQL</span>
+            </div>
+            <p class="project-desc">
+              Web-based K3 service platform for PT. Katiga Veritas Indonesia featuring online certificate validation,
+              training management, and audit flows.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Apr 2026 &nbsp;·&nbsp; PT. Katiga Veritas</span>
+            <a href="#" class="project-link" onclick="openProjectModal('katiga'); return false;">View
+              <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Project 4: Dashboard Employee Training Monitoring -->
+        <div class="project-card reveal reveal-delay-1" data-category="data-analyst">
+          <div class="project-thumb">
+            <img src="https://jobtrenurtika.wordpress.com/wp-content/uploads/2015/08/6.jpg"
+              alt="Dashboard Employee Training Progress Monitoring" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="project-category-badge">Data Analyst</span>
+            <h3 class="project-title">Dashboard Employee Training Progress Monitoring</h3>
+            <div class="project-tags">
+              <span class="tag tag-bi">Power BI</span>
+              <span class="tag tag-ml">Power Query</span>
+              <span class="tag tag-ml">Data Analysis</span>
+              <span class="tag tag-ml">Data Preparation</span>
+            </div>
+            <p class="project-desc">
+              Consolidated thousands of training logs across internal divisions into an interactive Power BI dashboard
+              tracking completion metrics.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">Aug 2025 &nbsp;·&nbsp; PT. Telkom Indonesia</span>
+            <a href="#" class="project-link" onclick="openProjectModal('employee'); return false;">View
+              <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Project 5: Multifile Procurement Automation -->
+        <div class="project-card reveal reveal-delay-2" data-category="data-analyst">
+          <div class="project-thumb">
+            <img src="https://jobtrenurtika.wordpress.com/wp-content/uploads/2015/08/6.jpg"
+              alt="Multifile Procurement Data Integration and Automation" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="project-category-badge">Data Analyst</span>
+            <h3 class="project-title">Multifile Procurement Data Integration and Automation</h3>
+            <div class="project-tags">
+              <span class="tag tag-py">Python</span>
+              <span class="tag tag-py">Pandas</span>
+              <span class="tag tag-ml">Data Integration</span>
+              <span class="tag tag-ml">Automation</span>
+            </div>
+            <p class="project-desc">
+              Automated Python data pipeline matching and integrating multi-spreadsheet procurement data, reducing
+              processing time to under 1 hour.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">June 2025 &nbsp;·&nbsp; PT. Telkom Indonesia</span>
+            <a href="#" class="project-link" onclick="openProjectModal('automation'); return false;">View
+              <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- Project 6: Maison Sono Perfume -->
+        <div class="project-card reveal reveal-delay-3" data-category="system-analyst fullstack">
+          <div class="project-thumb">
+            <img src="assets/projects/maison-perfume.jpg" alt="E-Commerce Maison Sono Perfume" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <span class="project-category-badge">System Analyst &amp; Fullstack</span>
+            <h3 class="project-title">E-Commerce Maison Sono Perfume</h3>
+            <div class="project-tags">
+              <span class="tag tag-ml">Workflow Design</span>
+              <span class="tag tag-ml">System Modeling</span>
+              <span class="tag tag-py">Laravel</span>
+              <span class="tag tag-ml">JavaScript</span>
+              <span class="tag tag-sql">MySQL</span>
+            </div>
+            <p class="project-desc">
+              Full lifecycle e-commerce solution starting from requirement analysis and user workflows to backend APIs,
+              UI wireframes, and database modeling.
+            </p>
+          </div>
+          <div class="project-footer">
+            <span class="project-meta">May 2025 &nbsp;·&nbsp; Maison Sono</span>
+            <a href="#" class="project-link" onclick="openProjectModal('maison'); return false;">View
+              <span>→</span></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===================== PROJECT MODAL ===================== -->
+  <div class="pmodal-overlay" id="projectModal" onclick="handleModalOverlayClick(event)">
+    <div class="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmodal-title">
+      <button class="pmodal-close" id="pmodalClose" onclick="closeProjectModal()" aria-label="Close modal">✕</button>
+      <div class="pmodal-left">
+        <div class="pmodal-slider" id="pmodalSlider"></div>
+        <div class="pmodal-slider-controls">
+          <button class="pmodal-arrow" id="pmodalPrev" onclick="slideProject(-1)" aria-label="Previous image">‹</button>
+          <div class="pmodal-dots" id="pmodalDots"></div>
+          <button class="pmodal-arrow" id="pmodalNext" onclick="slideProject(1)" aria-label="Next image">›</button>
+        </div>
+      </div>
+      <div class="pmodal-right">
+        <div class="pmodal-tags" id="pmodalTags"></div>
+        <h2 class="pmodal-title" id="pmodal-title"></h2>
+        <p class="pmodal-meta" id="pmodalMeta"></p>
+        <div class="pmodal-divider"></div>
+        <div class="pmodal-body" id="pmodalBody"></div>
+        <div class="pmodal-highlights" id="pmodalHighlights"></div>
+        <div class="pmodal-actions" id="pmodalActions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <p>© 2026 <strong>Diyan Pebriyanti</strong> &nbsp;·&nbsp; Jakarta, Indonesia</p>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    // ── Mobile Nav ───────────────────────────────────────────
+    function openMobileNav() { document.getElementById('mobileNav').classList.add('open'); }
+    function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
+    document.getElementById('mobileNavClose').onclick = closeMobileNav;
+
+    // ── Scroll Reveal ────────────────────────────────────────
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ── Category Filtering ───────────────────────────────────
+    function filterProjects(category, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#allProjectsGrid .project-card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const cardCats = (card.getAttribute('data-category') || '').split(' ');
+        if (category === 'all' || cardCats.includes(category)) {
+          card.classList.remove('filtered-out');
+          visibleCount++;
+        } else {
+          card.classList.add('filtered-out');
+        }
+      });
+
+      const labelMap = {
+        'all': 'All Projects',
+        'data-analyst': 'Data Analyst',
+        'system-analyst': 'System Analyst',
+        'fullstack': 'Fullstack Developer'
+      };
+
+      const filterInfo = document.getElementById('filterResultInfo');
+      if (filterInfo) {
+        filterInfo.textContent = `Showing ${visibleCount} project${visibleCount === 1 ? '' : 's'} (${labelMap[category] || category})`;
+      }
+    }
+
+    // ── Project Modal Data ───────────────────────────────────
+    const projectData = {
+      sentiment: {
+        title: 'Multiplatform Sentiment Analysis',
+        meta: 'Aug 2026 · Accuracy 95.2% · Social Media Sentiment Analyst',
+        tags: [
+          { label: 'Python', cls: 'tag-py' },
+          { label: 'NLP', cls: 'tag-ml' },
+          { label: 'Deep Learning', cls: 'tag-ml' },
+          { label: 'Machine Learning', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/skripsi1.png', caption: 'Multiplatform Data Distribution' },
+          { src: 'assets/projects/skripsi2.png', caption: 'Evaluation' },
+          { src: 'assets/projects/skripsi3.png', caption: 'Conclusion' }
+        ],
+        description: `<p>Conducted sentiment analysis on over 172,000 social media comments from Facebook, Instagram, TikTok, X,
+              and YouTube, using Machine Learning & Deep Learning models to compare classification performance across social media
+              platforms.</p>`,
+        highlights: [
+          { icon: '🎯', label: 'Accuracy', value: '95.2%' },
+          { icon: '📦', label: 'Dataset', value: '172K rows' },
+          { icon: '🔢', label: 'Platform', value: '5 platforms' },
+          { icon: '⏱️', label: 'Project', value: 'Thesis' }
+        ],
+        github: 'https://github.com/diyanpe/multiplatform-sentiment-analysis.git'
+      },
+      langflow: {
+        title: 'Develop an AI Agent using Langflow',
+        meta: 'Aug 2026 · Bootcamp Hacktiv8-IBM',
+        tags: [
+          { label: 'Langflow', cls: 'tag-ml' },
+          { label: 'AI', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/langflow.png', caption: 'Langflow AI Agent' },
+          { src: 'assets/projects/langflow1.png', caption: 'Chatbot User Review' },
+          { src: 'assets/projects/langflow-ted.jpg', caption: 'Chatbot Youtube Sentiment Indonesian Podcast' },
+          { src: 'assets/projects/langflow-tcuc.jpg', caption: 'Chatbot Youtube Sentiment English Podcast' }
+        ],
+        description: `<p>An AI agent that analyzes customer feedback from CSV files to identify sentiment, key themes, and business insights automatically.</p>
+          <p>Developing an automated system for survey sentiment analysis, customer service complaint classification, executive-level business risk summaries, and actionable improvement recommendations.</p>`,
+        highlights: [
+          { icon: '🤖', label: 'AI Flow', value: 'Langflow' },
+          { icon: '💬', label: 'Analysis', value: 'Automated' }
+        ],
+        github: '#'
+      },
+      katiga: {
+        title: 'Occupational Health and Safety (OHS) Service Information System',
+        meta: 'Apr 2026 · System Analyst & Fullstack Developer',
+        tags: [
+          { label: 'Draw io', cls: 'tag-py' },
+          { label: 'Laravel', cls: 'tag-ml' },
+          { label: 'JavaScript', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/before-after-veritas.png', caption: 'Before & After Veritas Web' },
+          { src: 'assets/projects/veritas1.png', caption: 'Landing Page' },
+          { src: 'assets/projects/veritas2.png', caption: 'Training List Page' },
+          { src: 'assets/projects/veritas3.png', caption: 'Registration Flow Page' },
+          { src: 'assets/projects/veritas4.png', caption: 'Certificate Verification Page' }
+        ],
+        description: `<p>Developed a web-based Occupational Health and Safety (K3) Information System for PT. Katiga Veritas Indonesia.
+          The platform supports training, company's audit, and consultation services while providing an online certificate validation feature for authenticity verification.</p>
+          <p>As a System Analyst, Fullstack Developer, and Technical Writer, I was responsible for gathering requirements, designing business processes, developing the application, 
+          and creating system documentation. The solution improved workflow efficiency, centralized data management, and enhanced accessibility of K3 information for organizational use.</p>`,
+        highlights: [
+          { icon: '📐', label: 'Role', value: 'Sys Analyst & Dev' },
+          { icon: '🛡️', label: 'Domain', value: 'OHS / K3' }
+        ],
+        github: '#'
+      },
+      employee: {
+        title: 'Dashboard Employee Training Progress Monitoring',
+        meta: 'Jun 2025 · Data Analyst Intern',
+        tags: [
+          { label: 'Power BI', cls: 'tag-bi' },
+          { label: 'Power Query', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/employee-training.png', caption: 'Power BI Training Progress Dashboard' }
+        ],
+        description: `<p>Developed an <strong>interactive Power BI dashboard</strong> to visualize employee training progress. 
+                      I processed and consolidated thousands of records from<strong> multiple Excel datasets</strong>, performed data cleaning and transformation, and designed visual reports 
+                      to track training participation and completion rates. The dashboard improved data accessibility and enabled stakeholders to monitor training performance more efficiently.</p>`,
+        highlights: [
+          { icon: '📊', label: 'Tool', value: 'Power BI' },
+          { icon: '📈', label: 'Data', value: 'Multi-Department' }
+        ],
+        github: '#'
+      },
+      automation: {
+        title: 'Multifile Procurement Data Integration and Automation',
+        meta: 'Jun 2025 · Data Analyst Intern',
+        tags: [
+          { label: 'Python', cls: 'tag-py' },
+          { label: 'Pandas', cls: 'tag-py' }
+        ],
+        images: [
+          { src: 'assets/projects/before-after-automation.png', caption: 'Before & After Automation' },
+          { src: 'assets/projects/automation-code.png', caption: 'Automation Notebook' }
+        ],
+        description: `<p>Developed a <strong>Python based automation</strong> solution to integrate procurement data from <strong>multiple Excel</strong> files containing thousands of records.
+          The project addressed the inefficiency and risk of errors associated with manual data consolidation by automating data extraction, matching, and integration processes.</p>
+          <p>The solution significantly <strong>improved data processing efficiency and accuracy</strong>, and the work was subsequently published as a research article titled 
+          <i>Python Based Multifile Procurement Data Integration and Automation</i>.</p>`,
+        highlights: [
+          { icon: '🎯', label: 'Processing', value: '< 1 Hour' },
+          { icon: '📁', label: 'Automation', value: '10+ Files' }
+        ],
+        github: '#'
+      },
+      maison: {
+        title: 'E-Commerce Maison Sono Perfume',
+        meta: 'May 2025 · System Analyst & Fullstack',
+        tags: [
+          { label: 'Draw io', cls: 'tag-ml' },
+          { label: 'Laravel', cls: 'tag-ml' },
+          { label: 'JavaScript', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/maison-login.png', caption: 'High-fidelity Login Page' },
+          { src: 'assets/projects/maison-quiz.png', caption: 'High-fidelity Quiz Rezult Page' },
+          { src: 'assets/projects/maison-product.png', caption: 'High-fidelity Product Page' }
+        ],
+        description: `<p>Developed an <strong>e-commerce website</strong> for Maison Sono Perfume to support product promotion and online sales. 
+          The project began with <strong>analyzing business requirements</strong> and user needs to design an intuitive shopping experience. </p>
+          <p>As a System Analyst, and UI/UX Designer, I was responsible for <strong>defining system workflows, implementing backend</strong>, and designing user interfaces. 
+          The platform was designed to improve product accessibility, streamline purchasing processes, and strengthen the brand's digital presence.</p>`,
+        highlights: [
+          { icon: '🛍️', label: 'Platform', value: 'E-Commerce' },
+          { icon: '💡', label: 'Stack', value: 'Laravel & MySQL' }
+        ],
+        github: '#'
+      }
+    };
+
+    // ── Project Modal State & Handlers ───────────────────────
+    let currentSlide = 0;
+    let totalSlides = 0;
+
+    function openProjectModal(key) {
+      const data = projectData[key];
+      if (!data) return;
+
+      currentSlide = 0;
+      totalSlides = data.images.length;
+
+      // Build slider
+      const slider = document.getElementById('pmodalSlider');
+      slider.innerHTML = data.images.map((img, i) => `
+        <div class="pmodal-slide ${i === 0 ? 'active' : ''}">
+          <img src="${img.src || img.image}" alt="${img.caption}" class="pmodal-slide-img" onclick="window.open(this.src, '_blank')" title="Klik untuk lihat gambar ukuran penuh" />
+          <span class="pmodal-slide-caption">${img.caption}</span>
+        </div>
+      `).join('');
+
+      // Build dots
+      const dots = document.getElementById('pmodalDots');
+      dots.innerHTML = data.images.map((_, i) =>
+        `<button class="pmodal-dot ${i === 0 ? 'active' : ''}" onclick="goToSlide(${i})" aria-label="Slide ${i + 1}"></button>`
+      ).join('');
+
+      // Tags
+      document.getElementById('pmodalTags').innerHTML = data.tags
+        .map(t => `<span class="tag ${t.cls}">${t.label}</span>`).join('');
+
+      // Text
+      document.getElementById('pmodal-title').textContent = data.title;
+      document.getElementById('pmodalMeta').textContent = data.meta;
+      document.getElementById('pmodalBody').innerHTML = data.description;
+
+      // Highlights
+      document.getElementById('pmodalHighlights').innerHTML = `
+        <div class="pmodal-hl-grid">
+          ${data.highlights.map(h => `
+            <div class="pmodal-hl-item">
+              <span class="pmodal-hl-icon">${h.icon}</span>
+              <span class="pmodal-hl-value">${h.value}</span>
+              <span class="pmodal-hl-label">${h.label}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      // Actions
+      document.getElementById('pmodalActions').innerHTML = `
+        <a href="${data.github}" class="pmodal-btn" target="_blank" rel="noopener">
+          ⟨/⟩ &nbsp;View on GitHub
+        </a>
+      `;
+
+      // Show modal
+      const overlay = document.getElementById('projectModal');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+      document.getElementById('projectModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function handleModalOverlayClick(e) {
+      if (e.target === document.getElementById('projectModal')) closeProjectModal();
+    }
+
+    function slideProject(dir) {
+      goToSlide((currentSlide + dir + totalSlides) % totalSlides);
+    }
+
+    function goToSlide(idx) {
+      const slides = document.querySelectorAll('.pmodal-slide');
+      const dots = document.querySelectorAll('.pmodal-dot');
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = idx;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+
+    // Close on Escape
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeProjectModal();
+      if (e.key === 'ArrowLeft') slideProject(-1);
+      if (e.key === 'ArrowRight') slideProject(1);
+    });
+  </script>
+</body>
+
+</html>

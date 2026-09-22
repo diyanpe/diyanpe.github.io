@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Portfolio of Diyan Pebriyanti — Data Analyst fresh graduate passionate about turning data into impactful business insights." />
-  <title>Diyan Pebriyanti | Data Analyst</title>
+  <title>Diyan Pebriyanti | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
@@ -56,40 +56,24 @@
         <span class="name">Diyan Pebriyanti</span>
       </h1>
 
-      <p class="hero-role">Fresh Graduate &nbsp;·&nbsp; Universitas Indonesia &nbsp;·&nbsp; GPA 3.82</p>
+      <p class="hero-role">Information Systems Graduate &nbsp;·&nbsp; Itenas Bandung &nbsp;·&nbsp; GPA 3.73</p>
 
       <p class="hero-desc">
-        I transform <strong>raw data</strong> into <strong>meaningful insights</strong>
-        that drive smarter business decisions. Passionate about data visualization,
-        machine learning, and analytics storytelling.
+        Turning data into actionable insights and meaningful solutions through analytics, business intelligence, and
+        <br> data-driven problem solving.
       </p>
 
       <div class="hero-buttons">
-        <a href="#projects" class="hero-btn-primary" id="hero-view-projects">View Projects →</a>
+        <!-- <a href="#projects" class="hero-btn-primary" id="hero-view-projects">View Projects →</a> -->
         <a href="resume.pdf" class="hero-btn-outline" id="hero-download-cv" download>Download CV</a>
       </div>
 
       <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span id="counter-projects">0</span><span>+</span></div>
-          <div class="hero-stat-label">Projects Completed</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span id="counter-tools">0</span><span>+</span></div>
-          <div class="hero-stat-label">Tools Mastered</div>
-        </div>
-        <div class="hero-stat">
-          <div class="hero-stat-num"><span id="counter-certs">0</span><span>+</span></div>
-          <div class="hero-stat-label">Certifications</div>
-        </div>
       </div>
 
     </div>
 
-    <div class="hero-scroll">
-      <div class="hero-scroll-text">scroll</div>
-      <div class="hero-scroll-line"></div>
-    </div>
+
   </section>
 
 
@@ -97,137 +81,192 @@
   <section class="section projects" id="projects">
     <div class="container">
       <div class="projects-header reveal">
-        <div class="section-eyebrow">
-          <div class="section-eyebrow-line"></div>
-          <span class="section-eyebrow-text">Portfolio</span>
+        <div class="projects-header-left">
+          <div class="section-eyebrow">
+            <div class="section-eyebrow-line"></div>
+            <span class="section-eyebrow-text">Portfolio</span>
+          </div>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-desc">Real world challenges solved with a data driven approach.</p>
         </div>
-        <h2 class="section-title">Selected Projects</h2>
-        <p class="section-desc">Real-world challenges solved with a data-driven approach.</p>
+        <div class="projects-controls">
+          <a href="projects.html" class="projects-view-all-link" id="home-view-all-projects-top">
+            View All <span>→</span>
+          </a>
+        </div>
       </div>
 
-      <div class="projects-grid">
+      <!-- Slider Carousel Container with Overlapping Arrows -->
+      <div class="projects-carousel-container reveal reveal-delay-1">
+        <button class="slider-arrow-btn slider-arrow-prev" id="projectSliderPrev" onclick="slideProjectsTrack(-1)"
+          aria-label="Previous Projects">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
 
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-thumb" style="background:#F5EAEC;">🛒</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-py">Python</span>
-              <span class="tag tag-sql">SQL</span>
-              <span class="tag tag-bi">Tableau</span>
+        <!-- Slider Viewport -->
+        <div class="projects-slider-wrapper" id="projectsSliderWrapper">
+          <div class="projects-track" id="projectsTrack">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="assets/projects/sentiment-analysis.png" alt="Multiplatform Sentiment Analysis"
+                  loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge">Data Analyst</span>
+                <h3 class="project-title">Multiplatform Sentiment Analysis</h3>
+                <div class="project-tags">
+                  <span class="tag tag-ml">Data Scraping</span>
+                  <span class="tag tag-ml">Data Understanding</span>
+                  <span class="tag tag-ml">Data Preprocessing</span>
+                  <span class="tag tag-ml">Data Transformation</span>
+                  <span class="tag tag-ml">Machine Learning</span>
+                  <span class="tag tag-ml">Deep Learning</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <span class="project-meta">Aug 2026 &nbsp;·&nbsp; Thesis</span>
+                <a href="#" class="project-link" onclick="openProjectModal('sentiment'); return false;">View
+                  <span>→</span></a>
+              </div>
             </div>
-            <h3 class="project-title">Customer Churn Prediction</h3>
-            <p class="project-desc">
-              E-commerce churn model using Random Forest with 91.3% accuracy,
-              paired with a Tableau dashboard for real-time monitoring.
-            </p>
-          </div>
-          <div class="project-footer">
-            <span class="project-meta">Oct 2023 &nbsp;·&nbsp; Accuracy 91.3%</span>
-            <a href="#" class="project-link">View <span>→</span></a>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="assets/projects/langflow.png" alt="Develop an AI Agent using Langflow" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge">Data Analyst</span>
+                <h3 class="project-title">Develop an AI Agent using Langflow</h3>
+                <div class="project-tags">
+                  <span class="tag tag-ml">Business Analysis</span>
+                  <span class="tag tag-ml">Business Understanding</span>
+                  <span class="tag tag-ml">Langflow AI</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <span class="project-meta">Aug 2026 &nbsp;·&nbsp; Hacktiv8 x IBM</span>
+                <a href="#" class="project-link" onclick="openProjectModal('langflow'); return false;">View
+                  <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="assets/projects/pt-katiga.png" alt="Occupational Health and Safety (OHS) Information System"
+                  loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge">System Analyst &amp; Fullstack</span>
+                <h3 class="project-title">Occupational Health and Safety (OHS) Information System</h3>
+                <div class="project-tags">
+                  <span class="tag tag-ml">Business Workflow Design</span>
+                  <span class="tag tag-ml">Data &amp; System Modeling</span>
+                  <span class="tag tag-py">Laravel</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <span class="project-meta">Apr 2026 &nbsp;·&nbsp; PT. Katiga Veritas</span>
+                <a href="#" class="project-link" onclick="openProjectModal('katiga'); return false;">View
+                  <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="https://jobtrenurtika.wordpress.com/wp-content/uploads/2015/08/6.jpg"
+                  alt="Dashboard Employee Training Progress Monitoring" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge">Data Analyst</span>
+                <h3 class="project-title">Dashboard Employee Training Progress Monitoring</h3>
+                <div class="project-tags">
+                  <span class="tag tag-ml">Business Analysis</span>
+                  <span class="tag tag-bi">Power BI</span>
+                  <span class="tag tag-ml">Data Analysis</span>
+                  <span class="tag tag-ml">Data Preparation</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <span class="project-meta">Aug 2025 &nbsp;·&nbsp; PT. Telkom Indonesia</span>
+                <a href="#" class="project-link" onclick="openProjectModal('employee'); return false;">View
+                  <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="https://jobtrenurtika.wordpress.com/wp-content/uploads/2015/08/6.jpg"
+                  alt="Multifile Procurement Data Integration and Automation" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge">Data Analyst</span>
+                <h3 class="project-title">Multifile Procurement Data Integration and Automation</h3>
+                <div class="project-tags">
+                  <span class="tag tag-py">Python</span>
+                  <span class="tag tag-py">Pandas</span>
+                  <span class="tag tag-ml">Data Integration</span>
+                  <span class="tag tag-ml">Data Automation</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <span class="project-meta">June 2025 &nbsp;·&nbsp; PT. Telkom Indonesia</span>
+                <a href="#" class="project-link" onclick="openProjectModal('automation'); return false;">View
+                  <span>→</span></a>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="https://mms.img.susercontent.com/a5719843390bbaa45e223e17b42be578"
+                  alt="E-Commerce Maison Sono Perfume" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="project-category-badge">System Analyst &amp; Fullstack</span>
+                <h3 class="project-title">E-Commerce Maison Sono Perfume</h3>
+                <div class="project-tags">
+                  <span class="tag tag-ml">Workflow Design</span>
+                  <span class="tag tag-ml">Data Modeling</span>
+                  <span class="tag tag-py">Laravel</span>
+                  <span class="tag tag-ml">Prototyping</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <span class="project-meta">May 2025 &nbsp;·&nbsp; Maison Sono</span>
+                <a href="#" class="project-link" onclick="openProjectModal('maison'); return false;">View
+                  <span>→</span></a>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-thumb" style="background:#F5EFE5;">💰</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-py">Python</span>
-              <span class="tag tag-ml">ML</span>
-              <span class="tag tag-bi">Power BI</span>
-            </div>
-            <h3 class="project-title">Sales Forecasting Dashboard</h3>
-            <p class="project-desc">
-              Monthly sales prediction using Prophet &amp; ARIMA (MAPE 4.7%)
-              with an integrated Power BI dashboard for executive decisions.
-            </p>
-          </div>
-          <div class="project-footer">
-            <span class="project-meta">Aug 2023 &nbsp;·&nbsp; MAPE 4.7%</span>
-            <a href="#" class="project-link">View <span>→</span></a>
-          </div>
-        </div>
+        <button class="slider-arrow-btn slider-arrow-next" id="projectSliderNext" onclick="slideProjectsTrack(1)"
+          aria-label="Next Projects">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
 
-        <div class="project-card reveal reveal-delay-3">
-          <div class="project-thumb" style="background:#EAF0EA;">🗺️</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-py">Python</span>
-              <span class="tag tag-sql">SQL</span>
-            </div>
-            <h3 class="project-title">Indonesia Poverty EDA</h3>
-            <p class="project-desc">
-              Exploratory analysis of BPS data on poverty distribution across 34 provinces
-              using geospatial visualization with Geopandas &amp; Folium.
-            </p>
-          </div>
-          <div class="project-footer">
-            <span class="project-meta">Jun 2023 &nbsp;·&nbsp; 34 Provinces</span>
-            <a href="#" class="project-link">View <span>→</span></a>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-1">
-          <div class="project-thumb" style="background:#F5EAEC;">🏥</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-ml">ML</span>
-              <span class="tag tag-py">Python</span>
-            </div>
-            <h3 class="project-title">Heart Disease Classification</h3>
-            <p class="project-desc">
-              End-to-end ML pipeline for heart disease risk classification using XGBoost
-              with hyperparameter tuning, achieving an F1-Score of 0.89.
-            </p>
-          </div>
-          <div class="project-footer">
-            <span class="project-meta">Mar 2023 &nbsp;·&nbsp; F1-Score 0.89</span>
-            <a href="#" class="project-link">View <span>→</span></a>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-2">
-          <div class="project-thumb" style="background:#EAF0EA;">🏨</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-sql">SQL</span>
-              <span class="tag tag-bi">Tableau</span>
-            </div>
-            <h3 class="project-title">Hotel Revenue Analytics</h3>
-            <p class="project-desc">
-              Revenue and occupancy rate analysis using complex SQL queries.
-              Seasonal pattern identification that boosted revenue insights by 12%.
-            </p>
-          </div>
-          <div class="project-footer">
-            <span class="project-meta">Nov 2023 &nbsp;·&nbsp; +12% Revenue</span>
-            <a href="#" class="project-link">View <span>→</span></a>
-          </div>
-        </div>
-
-        <div class="project-card reveal reveal-delay-3">
-          <div class="project-thumb" style="background:#EEE8F5;">💬</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span class="tag tag-py">Python</span>
-              <span class="tag tag-ml">NLP</span>
-            </div>
-            <h3 class="project-title">Product Review Sentiment Analysis</h3>
-            <p class="project-desc">
-              Sentiment analysis using Indonesian BERT on 200K+ marketplace reviews
-              with 88.7% accuracy for product insight generation.
-            </p>
-          </div>
-          <div class="project-footer">
-            <span class="project-meta">Jan 2024 &nbsp;·&nbsp; 200K+ Reviews</span>
-            <a href="#" class="project-link">View <span>→</span></a>
-          </div>
-        </div>
-
+      <!-- Slider Footer (Dots & View All CTA) -->
+      <div class="projects-slider-footer reveal">
+        <div class="projects-pagination-dots" id="projectsSliderDots"></div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== SKILLS ===================== -->
+  <!-- ===================== SKILLS & TOOLS (Marquee) ===================== -->
   <section class="section skills" id="skills">
     <div class="container">
       <div class="skills-header">
@@ -239,84 +278,250 @@
           <h2 class="section-title">Tech Stack &amp; Tools</h2>
         </div>
         <p class="section-desc reveal reveal-delay-2">
-          A blend of technical depth and analytical thinking to deliver actionable insights.
+          A blend of technical depth and analytical tools to deliver actionable data-driven solutions.
         </p>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-row reveal reveal-delay-1" data-pct="90">
-          <div class="skill-icon-box">🐍</div>
-          <div class="skill-info">
-            <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">90%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar"></div>
+      <!-- 1-Row Infinite Moving Marquee (Right-to-Left) -->
+      <div class="tools-marquee-container reveal reveal-delay-1" id="toolsMarquee">
+        <div class="tools-marquee-track">
+
+          <!-- Item 1: Python -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+                loading="lazy" />
             </div>
+            <span class="skill-logo-name">Python</span>
           </div>
-        </div>
-        <div class="skill-row reveal reveal-delay-2" data-pct="85">
-          <div class="skill-icon-box">🗄️</div>
-          <div class="skill-info">
-            <div class="skill-top"><span class="skill-name">SQL</span><span class="skill-pct">85%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar"></div>
+
+          <!-- Item 2: SQL / PostgreSQL -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL"
+                loading="lazy" />
             </div>
+            <span class="skill-logo-name">PostgreSQL</span>
           </div>
-        </div>
-        <div class="skill-row reveal reveal-delay-1" data-pct="80">
-          <div class="skill-icon-box">📊</div>
-          <div class="skill-info">
-            <div class="skill-top"><span class="skill-name">Tableau</span><span class="skill-pct">80%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar"></div>
+
+          <!-- Item 3: MySQL -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                loading="lazy" />
             </div>
+            <span class="skill-logo-name">MySQL</span>
           </div>
-        </div>
-        <div class="skill-row reveal reveal-delay-2" data-pct="75">
-          <div class="skill-icon-box">📈</div>
-          <div class="skill-info">
-            <div class="skill-top"><span class="skill-name">Power BI</span><span class="skill-pct">75%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar"></div>
+
+          <!-- Item 4: Pandas -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"
+                loading="lazy" />
             </div>
+            <span class="skill-logo-name">Pandas</span>
           </div>
-        </div>
-        <div class="skill-row reveal reveal-delay-1" data-pct="82">
-          <div class="skill-icon-box">🐼</div>
-          <div class="skill-info">
-            <div class="skill-top"><span class="skill-name">Pandas &amp; NumPy</span><span class="skill-pct">82%</span>
+
+          <!-- Item 5: NumPy -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"
+                loading="lazy" />
             </div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar"></div>
-            </div>
+            <span class="skill-logo-name">NumPy</span>
           </div>
-        </div>
-        <div class="skill-row reveal reveal-delay-2" data-pct="78">
-          <div class="skill-icon-box">🔬</div>
-          <div class="skill-info">
-            <div class="skill-top"><span class="skill-name">Scikit-learn</span><span class="skill-pct">78%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar"></div>
+
+          <!-- Item 6: Scikit-learn -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+                alt="Scikit-learn" loading="lazy" />
             </div>
+            <span class="skill-logo-name">Scikit-learn</span>
           </div>
-        </div>
-        <div class="skill-row reveal reveal-delay-1" data-pct="72">
-          <div class="skill-icon-box">📉</div>
-          <div class="skill-info">
-            <div class="skill-top"><span class="skill-name">Matplotlib / Seaborn</span><span
-                class="skill-pct">72%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar"></div>
+
+          <!-- Item 7: TensorFlow -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                alt="TensorFlow" loading="lazy" />
             </div>
+            <span class="skill-logo-name">TensorFlow</span>
           </div>
-        </div>
-        <div class="skill-row reveal reveal-delay-2" data-pct="68">
-          <div class="skill-icon-box">☁️</div>
-          <div class="skill-info">
-            <div class="skill-top"><span class="skill-name">BigQuery</span><span class="skill-pct">68%</span></div>
-            <div class="skill-bar-bg">
-              <div class="skill-bar"></div>
+
+          <!-- Item 8: Power BI -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img skill-logo-powerbi">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Power BI">
+                <path
+                  d="M0 2.4C0 1.08 1.08 0 2.4 0h19.2C22.92 0 24 1.08 24 2.4v19.2c0 1.32-1.08 2.4-2.4 2.4H2.4C1.08 24 0 22.92 0 21.6z"
+                  fill="#F2C811" />
+                <path d="M7 18V9h2v9zm3.5 0V6H13v12zm3.5 0v-7h2v7z" fill="#1a1a1a" />
+              </svg>
             </div>
+            <span class="skill-logo-name">Power BI</span>
           </div>
+
+          <!-- Item 9: Tableau -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img skill-logo-tableau">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tableau">
+                <path
+                  d="M11.33 5.44h1.34v-3h4.44V1.1H12.67V0h-1.34v1.1H6.89v1.34h4.44zm9.78 5.44h2.22V9.55H24V8.22h-1.67V6h-1.33v2.22H19.2v1.33h1.91zm-18.22 0h2.22V9.55H6.78V8.22H5.11V6H3.78v2.22H1.89v1.33h1.89v1.33zm9 3.56H13.2v-3H15.6v-1.33H13.2V8.22h-2.4v1.89H8.4v1.33h2.4v3H8.4v1.33h2.4v1.89h2.4V20.8h-2.4v1.33H13.2V24h1.34v-1.87h2.35V20.8h-2.35v-1.89h2.35v-1.33h-2.35v-3zm8.67-3.56h2.22V9.55H24V8.22h-1.67v-1.3h-1.33v1.3H19.2v1.33h1.89v1.33h-1.89v1.34h2.22v-1.34z"
+                  fill="#E97627" />
+              </svg>
+            </div>
+            <span class="skill-logo-name">Tableau</span>
+          </div>
+
+          <!-- Item 10: Git -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Git</span>
+          </div>
+
+          <!-- Item 11: Jupyter -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Jupyter</span>
+          </div>
+
+          <!-- Item 12: Laravel -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://tse3.mm.bing.net/th/id/OIP.IE_-Jzwe730aFotE58-IsAHaHs?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Laravel" loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Laravel</span>
+          </div>
+
+          <!-- Item 13: JavaScript -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript" loading="lazy" />
+            </div>
+            <span class="skill-logo-name">JavaScript</span>
+          </div>
+
+          <!-- Duplicate Set for Seamless Infinite Loop -->
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Python</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">PostgreSQL</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">MySQL</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Pandas</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">NumPy</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+                alt="Scikit-learn" loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Scikit-learn</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                alt="TensorFlow" loading="lazy" />
+            </div>
+            <span class="skill-logo-name">TensorFlow</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img skill-logo-powerbi">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Power BI">
+                <path
+                  d="M0 2.4C0 1.08 1.08 0 2.4 0h19.2C22.92 0 24 1.08 24 2.4v19.2c0 1.32-1.08 2.4-2.4 2.4H2.4C1.08 24 0 22.92 0 21.6z"
+                  fill="#F2C811" />
+                <path d="M7 18V9h2v9zm3.5 0V6H13v12zm3.5 0v-7h2v7z" fill="#1a1a1a" />
+              </svg>
+            </div>
+            <span class="skill-logo-name">Power BI</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img skill-logo-tableau">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tableau">
+                <path
+                  d="M11.33 5.44h1.34v-3h4.44V1.1H12.67V0h-1.34v1.1H6.89v1.34h4.44zm9.78 5.44h2.22V9.55H24V8.22h-1.67V6h-1.33v2.22H19.2v1.33h1.91zm-18.22 0h2.22V9.55H6.78V8.22H5.11V6H3.78v2.22H1.89v1.33h1.89v1.33zm9 3.56H13.2v-3H15.6v-1.33H13.2V8.22h-2.4v1.89H8.4v1.33h2.4v3H8.4v1.33h2.4v1.89h2.4V20.8h-2.4v1.33H13.2V24h1.34v-1.87h2.35V20.8h-2.35v-1.89h2.35v-1.33h-2.35v-3zm8.67-3.56h2.22V9.55H24V8.22h-1.67v-1.3h-1.33v1.3H19.2v1.33h1.89v1.33h-1.89v1.34h2.22v-1.34z"
+                  fill="#E97627" />
+              </svg>
+            </div>
+            <span class="skill-logo-name">Tableau</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Git</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Jupyter</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Laravel</span>
+          </div>
+
+          <div class="skill-logo-card" aria-hidden="true">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript" loading="lazy" />
+            </div>
+            <span class="skill-logo-name">JavaScript</span>
+          </div>
+
         </div>
       </div>
     </div>
@@ -334,48 +539,83 @@
       </div>
 
       <div class="cert-grid">
+        <!-- 1. Hacktiv8 x IBM SkillsBuild -->
         <div class="cert-card reveal reveal-delay-1">
-          <div class="cert-icon g">🧠</div>
-          <div>
-            <div class="cert-name">Google Data Analytics</div>
-            <div class="cert-issuer">Google &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2023</div>
+          <div class="cert-main">
+            <div class="cert-icon cert-logo-hacktiv8">
+              <img src="https://img2.beritasatu.com/cache/investor/910x580-2/20160616141349049.jpg" alt="Hacktiv8 Logo">
+            </div>
+            <div class="cert-info">
+              <div class="cert-name">AI Agent for Data Analysis</div>
+              <div class="cert-issuer">Hacktiv8 &nbsp;·&nbsp; 2026</div>
+            </div>
           </div>
+          <a href="https://drive.google.com/file/d/1Dg8yuGunSlAbtABJAx30Tke_XZ6At46-/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="cert-view-btn" aria-label="View Data AI Agent credential">View ↗</a>
         </div>
+
+        <!-- 2. IBM -->
         <div class="cert-card reveal reveal-delay-2">
-          <div class="cert-icon ms">⚡</div>
-          <div>
-            <div class="cert-name">Microsoft Power BI Analyst</div>
-            <div class="cert-issuer">Microsoft &nbsp;·&nbsp; PL-300 &nbsp;·&nbsp; 2023</div>
+          <div class="cert-main">
+            <div class="cert-icon cert-logo-ibm">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo">
+            </div>
+            <div class="cert-info">
+              <div class="cert-name">Data Fundamentals</div>
+              <div class="cert-issuer">IBM &nbsp;·&nbsp; 2025</div>
+            </div>
           </div>
+          <a href="https://drive.google.com/file/d/1FY9n_bCB3ZDQ8Zf0SUCNKqFk2wXUaA4H/view?usp=drive_link"
+            target="_blank" rel="noopener noreferrer" class="cert-view-btn"
+            aria-label="View IBM Data Science credential">View ↗</a>
         </div>
+
+        <!-- 3. HackerRank -->
         <div class="cert-card reveal reveal-delay-3">
-          <div class="cert-icon ibm">🔬</div>
-          <div>
-            <div class="cert-name">IBM Data Science Professional</div>
-            <div class="cert-issuer">IBM &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2022</div>
+          <div class="cert-main">
+            <div class="cert-icon cert-logo-hackerrank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                alt="HackerRank Logo">
+            </div>
+            <div class="cert-info">
+              <div class="cert-name">SQL (Advanced)</div>
+              <div class="cert-issuer">HackerRank &nbsp;·&nbsp; 2024</div>
+            </div>
           </div>
+          <a href="https://www.hackerrank.com/certificates/70a7a8413988" target="_blank" rel="noopener noreferrer"
+            class="cert-view-btn" aria-label="View ML Specialization credential">View ↗</a>
         </div>
+
+        <!-- 4. Digitalent -->
         <div class="cert-card reveal reveal-delay-1">
-          <div class="cert-icon dice">📊</div>
-          <div>
-            <div class="cert-name">Tableau Desktop Specialist</div>
-            <div class="cert-issuer">Tableau &nbsp;·&nbsp; Official &nbsp;·&nbsp; 2023</div>
+          <div class="cert-main">
+            <div class="cert-icon cert-logo-digitalent">
+              <img src="https://digitalent.komdigi.go.id/assets/img/dts-mono.png" alt="digitalent Logo">
+            </div>
+            <div class="cert-info">
+              <div class="cert-name">Python for Business</div>
+              <div class="cert-issuer">Kominfo &nbsp;·&nbsp; Digitalent &nbsp;·&nbsp; 2024</div>
+            </div>
           </div>
+          <a href="https://drive.google.com/file/d/1x4lFEaVPMnn-9pfzKalbtUhKy2pYbliK/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="cert-view-btn" aria-label="View Digitalent">View ↗</a>
         </div>
-        <div class="cert-card reveal reveal-delay-2">
-          <div class="cert-icon g">☁️</div>
-          <div>
-            <div class="cert-name">Google Cloud Associate</div>
-            <div class="cert-issuer">Google Cloud &nbsp;·&nbsp; ACE &nbsp;·&nbsp; 2024</div>
+
+        <!-- 5. Udemy -->
+        <!-- <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-main">
+            <div class="cert-icon cert-logo-udemy">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg" alt="Udemy Logo">
+            </div>
+            <div class="cert-info">
+              <div class="cert-name">Complete Data Science Bootcamp</div>
+              <div class="cert-issuer">Udemy &nbsp;·&nbsp; 2024</div>
+            </div>
           </div>
-        </div>
-        <div class="cert-card reveal reveal-delay-3">
-          <div class="cert-icon ms">🤖</div>
-          <div>
-            <div class="cert-name">ML Specialization</div>
-            <div class="cert-issuer">Andrew Ng &nbsp;·&nbsp; Coursera &nbsp;·&nbsp; 2022</div>
-          </div>
-        </div>
+          <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer" class="cert-view-btn"
+            aria-label="View Udemy Data Science credential">View ↗</a>
+        </div> -->
       </div>
     </div>
   </section>
@@ -396,23 +636,32 @@
 
           <div class="about-text">
             <p>
-              I'm a <strong>Statistics graduate from Universitas Indonesia</strong> with a GPA of 3.82/4.00.
-              Throughout my studies I worked on real-world data projects — from customer churn models
-              to operational business dashboards.
+              I'm an <strong>Information Systems graduate from Institut Teknologi Nasional Bandung</strong> with a GPA
+              of
+              3.73/4.00.
+              experience as a Data Analyst Intern I enjoy turning complex data and business needs into clear insights
+              and practical solutions.
+              My experience spans <strong> data analysis, data automation, business intelligence, and data
+                modeling</strong>,
+              with hands-on experience using Python, SQL, Power BI, and machine learning techniques.
             </p>
             <p>
-              I believe data is more than numbers — it's a story waiting to be told.
-              My strength lies in blending rigorous analysis with clear, compelling communication.
+              I enjoy exploring data, identifying patterns, and translating findings into insights that support better
+              decision making.
+              I believe good analysis isn't just about getting the right numbers it's about <strong> understanding the
+                story
+                behind the data
+                and turning it into meaningful action</strong>.
             </p>
           </div>
 
           <div class="about-pills">
-            <span class="pill pill-m">Data Visualization</span>
-            <span class="pill pill-m">Machine Learning</span>
-            <span class="pill pill-c">Business Intelligence</span>
-            <span class="pill pill-c">SQL &amp; Databases</span>
+            <span class="pill pill-m">Data Analytics</span>
+            <span class="pill pill-m">Data Preparation</span>
+            <span class="pill pill-c">Data Automation</span>
             <span class="pill pill-c">Python</span>
-            <span class="pill pill-c">Statistical Analysis</span>
+            <span class="pill pill-c">SQL &amp; Databases</span>
+            <!-- <span class="pill pill-c">Statistical Analysis</span> -->
           </div>
         </div>
 
@@ -427,33 +676,33 @@
             <div class="timeline-item">
               <div class="timeline-dot">🎓</div>
               <div>
-                <div class="timeline-degree">B.Sc. Statistics</div>
-                <div class="timeline-school">Universitas Indonesia &nbsp;·&nbsp; GPA 3.82 / 4.00</div>
-                <div class="timeline-year">2020 – 2024</div>
+                <div class="timeline-degree">Bachelor Degree of Information Systems</div>
+                <div class="timeline-school">Institut Teknologi Nasional Bandung &nbsp;·&nbsp; GPA 3.73 / 4.00</div>
+                <div class="timeline-year">2022 – 2026</div>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-dot">💼</div>
               <div>
                 <div class="timeline-degree">Data Analyst Intern</div>
-                <div class="timeline-school">PT Tokopedia Tbk &nbsp;·&nbsp; Analytics Division</div>
-                <div class="timeline-year">Jun – Dec 2023</div>
+                <div class="timeline-school">PT Telkom Indonesia &nbsp;·&nbsp; Procurement Division</div>
+                <div class="timeline-year">Jun – Aug 2025</div>
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-dot">📚</div>
+              <div class="timeline-dot">💼</div>
               <div>
-                <div class="timeline-degree">Data Science Bootcamp</div>
-                <div class="timeline-school">RevoU &nbsp;·&nbsp; Full Stack Data Analytics</div>
-                <div class="timeline-year">Feb – May 2023</div>
+                <div class="timeline-degree">Data Mining Practicum Assistant</div>
+                <div class="timeline-school">Institut Teknologi Nasional Bandung</div>
+                <div class="timeline-year">Feb – Jun 2026</div>
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-dot">🏆</div>
+              <div class="timeline-dot">💼</div>
               <div>
-                <div class="timeline-degree">Data Competition Finalist</div>
-                <div class="timeline-school">Gemastik XVI &nbsp;·&nbsp; Data Mining Category</div>
-                <div class="timeline-year">2023</div>
+                <div class="timeline-degree">Database II Practicum Assistant</div>
+                <div class="timeline-school">Institut Teknologi Nasional Bandung</div>
+                <div class="timeline-year">Feb – Jun 2025</div>
               </div>
             </div>
           </div>
@@ -480,28 +729,136 @@
 
       <div class="contact-card reveal reveal-delay-2">
         <h3>Say Hello 👋</h3>
-        <p>Typical response time &lt; 24 hours. I'd love to hear about your data challenges.</p>
+        <p>Interested in working together or just want to connect? Feel free to drop me a message. I'd love to hear from
+          you!</p>
         <div class="contact-links">
-          <a href="mailto:pebriyantidiya@gmail.com" class="contact-link" id="contact-email">
-            ✉️ &nbsp;pebriyantidiya@gmail.com
+          <!-- Gmail -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pebriyantidiyan@gmail.com"
+            class="contact-link contact-link-gmail" id="contact-email" target="_blank" rel="noopener"
+            aria-label="Send email via Gmail">
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.545l8.073-6.052C21.69 2.28 24 3.434 24 5.457z"
+                fill="#EA4335" />
+              <path
+                d="M0 5.457v2.182l12 9 12-9V5.457c0-2.023-2.309-3.178-3.927-1.964L12 9.545 3.927 3.493C2.309 2.28 0 3.434 0 5.457z"
+                fill="#EA4335" />
+              <path d="M18.545 21H22.364A1.636 1.636 0 0 0 24 19.364V6.273l-5.455 4.091V21z" fill="#4285F4" />
+              <path d="M5.455 21H1.636A1.636 1.636 0 0 1 0 19.364V6.273l5.455 4.091V21z" fill="#34A853" />
+              <path d="M18.545 10.364L24 6.273V5.455c0-2.023-2.309-3.178-3.927-1.964L18.545 4.636v5.728z"
+                fill="#FBBC04" />
+              <path d="M5.455 10.364L0 6.273V5.455c0-2.023 2.309-3.178 3.927-1.964L5.455 4.636v5.728z" fill="#C5221F" />
+            </svg>
+            <span>Gmail</span>
           </a>
-          <a href="https://linkedin.com/in/diyan-pebriyanti" class="contact-link" id="contact-linkedin" target="_blank"
-            rel="noopener">
-            🔗 &nbsp;LinkedIn
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/diyan-pebriyanti" class="contact-link contact-link-linkedin"
+            id="contact-linkedin" target="_blank" rel="noopener" aria-label="Visit LinkedIn profile">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.78a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2Z" />
+            </svg>
+            <span>LinkedIn</span>
           </a>
-          <a href="https://github.com/diyan-pebriyanti" class="contact-link" id="contact-github" target="_blank"
-            rel="noopener">
-            ⟨/⟩ &nbsp;GitHub
+
+          <!-- GitHub -->
+          <a href="https://github.com/diyanpe/" class="contact-link contact-link-github" id="contact-github"
+            target="_blank" rel="noopener" aria-label="Visit GitHub profile">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+            <span>GitHub</span>
           </a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ===================== CERTIFICATE CREDENTIAL MODAL ===================== -->
+  <div class="pmodal-overlay" id="certModal" onclick="handleCertOverlayClick(event)">
+    <div class="cert-modal-box" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+      <button class="pmodal-close" onclick="closeCertModal()" aria-label="Close modal">✕</button>
+      <div class="cert-modal-header">
+        <div class="cert-modal-icon" id="certModalIcon">🎓</div>
+        <div>
+          <h3 class="cert-modal-title" id="certModalTitle">Certificate Title</h3>
+          <p class="cert-modal-issuer" id="certModalIssuer">Issuer &amp; Year</p>
+        </div>
+      </div>
+
+      <div class="cert-modal-details">
+        <div class="cert-detail-row">
+          <span class="cert-detail-label">Credential ID:</span>
+          <span class="cert-detail-val" id="certModalId">IBM-HCK-2026-AI78</span>
+        </div>
+        <div class="cert-detail-row">
+          <span class="cert-detail-label">Issued Date:</span>
+          <span class="cert-detail-val" id="certModalDate">July 2026</span>
+        </div>
+        <div class="cert-detail-row">
+          <span class="cert-detail-label">Status:</span>
+          <span class="cert-detail-val" style="color:#2E7D32;">● Verified Credential</span>
+        </div>
+      </div>
+
+      <p class="cert-modal-desc" id="certModalDesc">
+        Credential description and covered capabilities.
+      </p>
+
+      <div>
+        <span
+          style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted);">Skills
+          Validated:</span>
+        <div class="cert-skills-badge-list" id="certModalSkills"></div>
+      </div>
+
+      <div class="cert-modal-actions" id="certModalActions">
+        <a href="#" class="pmodal-btn" id="certModalVerifyBtn" target="_blank" rel="noopener">
+          Verify Official Credential ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PROJECT MODAL ===================== -->
+  <div class="pmodal-overlay" id="projectModal" onclick="handleModalOverlayClick(event)">
+    <div class="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmodal-title">
+
+      <!-- Close button -->
+      <button class="pmodal-close" id="pmodalClose" onclick="closeProjectModal()" aria-label="Close modal">✕</button>
+
+      <!-- LEFT: Image Slider -->
+      <div class="pmodal-left">
+        <div class="pmodal-slider" id="pmodalSlider">
+          <!-- slides injected by JS -->
+        </div>
+        <div class="pmodal-slider-controls">
+          <button class="pmodal-arrow" id="pmodalPrev" onclick="slideProject(-1)" aria-label="Previous image">‹</button>
+          <div class="pmodal-dots" id="pmodalDots"></div>
+          <button class="pmodal-arrow" id="pmodalNext" onclick="slideProject(1)" aria-label="Next image">›</button>
+        </div>
+      </div>
+
+      <!-- RIGHT: Info -->
+      <div class="pmodal-right">
+        <div class="pmodal-tags" id="pmodalTags"></div>
+        <h2 class="pmodal-title" id="pmodal-title"></h2>
+        <p class="pmodal-meta" id="pmodalMeta"></p>
+        <div class="pmodal-divider"></div>
+        <div class="pmodal-body" id="pmodalBody"></div>
+        <div class="pmodal-highlights" id="pmodalHighlights"></div>
+        <div class="pmodal-actions" id="pmodalActions"></div>
+      </div>
+
+    </div>
+  </div>
+
   <!-- ===================== FOOTER ===================== -->
   <footer>
     <div class="container">
-      <p>© 2024 <strong>Diyan Pebriyanti</strong> &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; Jakarta, Indonesia</p>
+      <p>© 2026 <strong>Diyan Pebriyanti</strong> &nbsp;·&nbsp; Jakarta, Indonesia</p>
     </div>
   </footer>
 
@@ -510,7 +867,7 @@
     // ── Sticky Nav ───────────────────────────────────────────
     const mainNav = document.getElementById('mainNav');
     window.addEventListener('scroll', () => {
-      mainNav.classList.toggle('scrolled', window.scrollY > 60);
+      mainNav.classList.toggle('scrolled', window.scrollY > 20);
       updateActiveNav();
     });
 
@@ -539,18 +896,11 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          // skill bars
-          const bar = entry.target.querySelector('.skill-bar');
-          if (bar && !bar.dataset.animated) {
-            const pct = entry.target.dataset.pct || 0;
-            setTimeout(() => { bar.style.width = pct + '%'; }, 200);
-            bar.dataset.animated = '1';
-          }
         }
       });
     }, { threshold: 0.12 });
 
-    document.querySelectorAll('.reveal, .skill-row').forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     // ── Counter Animation ────────────────────────────────────
     function animateCounter(id, target) {
@@ -578,6 +928,416 @@
 
     const heroStat = document.querySelector('.hero-stats');
     if (heroStat) counterObs.observe(heroStat);
+
+    // ── Project Carousel / Slider on Homepage ───────────────
+    let currentTrackIndex = 0;
+    const projectsTrack = document.getElementById('projectsTrack');
+    const projectCards = document.querySelectorAll('#projectsTrack .project-card');
+    const dotsContainer = document.getElementById('projectsSliderDots');
+    const prevBtn = document.getElementById('projectSliderPrev');
+    const nextBtn = document.getElementById('projectSliderNext');
+
+    function getVisibleCount() {
+      if (window.innerWidth <= 640) return 1;
+      if (window.innerWidth <= 1024) return 2;
+      return 3;
+    }
+
+    function getMaxIndex() {
+      const visible = getVisibleCount();
+      return Math.max(0, projectCards.length - visible);
+    }
+
+    function initProjectSlider() {
+      if (!dotsContainer) return;
+      const maxIdx = getMaxIndex();
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i <= maxIdx; i++) {
+        const dot = document.createElement('button');
+        dot.className = `p-dot ${i === currentTrackIndex ? 'active' : ''}`;
+        dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        dot.onclick = () => goToProjectTrackIndex(i);
+        dotsContainer.appendChild(dot);
+      }
+      updateTrackPosition();
+    }
+
+    function updateTrackPosition() {
+      if (!projectsTrack || projectCards.length === 0) return;
+      const maxIdx = getMaxIndex();
+      if (currentTrackIndex > maxIdx) currentTrackIndex = maxIdx;
+      if (currentTrackIndex < 0) currentTrackIndex = 0;
+
+      const card = projectCards[0];
+      const gap = 24;
+      const cardWidth = card.getBoundingClientRect().width;
+      const offset = currentTrackIndex * (cardWidth + gap);
+      projectsTrack.style.transform = `translateX(-${offset}px)`;
+
+      // Update buttons
+      if (prevBtn) prevBtn.disabled = currentTrackIndex === 0;
+      if (nextBtn) nextBtn.disabled = currentTrackIndex >= maxIdx;
+
+      // Update dots
+      const dots = dotsContainer.querySelectorAll('.p-dot');
+      dots.forEach((d, idx) => {
+        d.classList.toggle('active', idx === currentTrackIndex);
+      });
+    }
+
+    function slideProjectsTrack(dir) {
+      const maxIdx = getMaxIndex();
+      currentTrackIndex = Math.min(Math.max(0, currentTrackIndex + dir), maxIdx);
+      updateTrackPosition();
+    }
+
+    function goToProjectTrackIndex(idx) {
+      currentTrackIndex = idx;
+      updateTrackPosition();
+    }
+
+    window.addEventListener('resize', () => {
+      initProjectSlider();
+    });
+    initProjectSlider();
+
+    // Touch Swipe for Projects Slider
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const sliderWrapper = document.getElementById('projectsSliderWrapper');
+    if (sliderWrapper) {
+      sliderWrapper.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      sliderWrapper.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 50) slideProjectsTrack(1);
+        if (touchEndX - touchStartX > 50) slideProjectsTrack(-1);
+      }, { passive: true });
+    }
+
+    // ── Project Modal Data ───────────────────────────────────
+    const projectData = {
+      sentiment: {
+        title: 'Multiplatform Sentiment Analysis',
+        meta: 'Aug 2026 · Accuracy 95.2% · Social Media Sentiment Analyst',
+        tags: [
+          { label: 'Python', cls: 'tag-py' },
+          { label: 'NLP', cls: 'tag-ml' },
+          { label: 'Deep Learning', cls: 'tag-ml' },
+          { label: 'Machine Learning', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/skripsi1.png', caption: 'Multiplatform Data Distribution' },
+          { src: 'assets/projects/skripsi2.png', caption: 'Evaluation' },
+          { src: 'assets/projects/skripsi3.png', caption: 'Conclusion' }
+        ],
+        description: `<p>Conducted sentiment analysis on over 172,000 social media comments from Facebook, Instagram, TikTok, X,
+              and YouTube, using Machine Learning & Deep Learning models to compare classification performance across social media
+              platforms.</p>`,
+        highlights: [
+          { icon: '🎯', label: 'Accuracy', value: '95.2%' },
+          { icon: '📦', label: 'Dataset', value: '172K rows' },
+          { icon: '🔢', label: 'Platform', value: '5 platforms' },
+          { icon: '⏱️', label: 'Project', value: 'Thesis' }
+        ],
+        github: 'https://github.com/diyanpe/multiplatform-sentiment-analysis.git'
+      },
+      langflow: {
+        title: 'Develop an AI Agent using Langflow',
+        meta: 'Aug 2026 · Bootcamp Hacktiv8-IBM',
+        tags: [
+          { label: 'Langflow', cls: 'tag-ml' },
+          { label: 'AI', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/langflow.png', caption: 'Langflow AI Agent' },
+          { src: 'assets/projects/langflow1.png', caption: 'Chatbot User Review' },
+          { src: 'assets/projects/langflow-ted.jpg', caption: 'Chatbot Youtube Sentiment Indonesian Podcast' },
+          { src: 'assets/projects/langflow-tcuc.jpg', caption: 'Chatbot Youtube Sentiment English Podcast' }
+        ],
+        description: `<p>An AI agent that analyzes customer feedback from CSV files to identify sentiment, key themes, and business insights automatically.</p>
+          <p>Developing an automated system for survey sentiment analysis, customer service complaint classification, executive-level business risk summaries, and actionable improvement recommendations.</p>`,
+        highlights: [
+          { icon: '🤖', label: 'AI Flow', value: 'Langflow' },
+          { icon: '💬', label: 'Analysis', value: 'Automated' }
+        ],
+        github: '#'
+      },
+      katiga: {
+        title: 'Occupational Health and Safety (OHS) Service Information System',
+        meta: 'Apr 2026 · System Analyst & Fullstack Developer',
+        tags: [
+          { label: 'Draw io', cls: 'tag-py' },
+          { label: 'Laravel', cls: 'tag-ml' },
+          { label: 'JavaScript', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/before-after-veritas.png', caption: 'Before & After Veritas Web' },
+          { src: 'assets/projects/veritas1.png', caption: 'Landing Page' },
+          { src: 'assets/projects/veritas2.png', caption: 'Training List Page' },
+          { src: 'assets/projects/veritas3.png', caption: 'Registration Flow Page' },
+          { src: 'assets/projects/veritas4.png', caption: 'Certificate Verification Page' }
+        ],
+        description: `<p>Developed a web-based Occupational Health and Safety (K3) Information System for PT. Katiga Veritas Indonesia.
+          The platform supports training, company's audit, and consultation services while providing an online certificate validation feature for authenticity verification.</p>
+          <p>As a System Analyst, Fullstack Developer, and Technical Writer, I was responsible for gathering requirements, designing business processes, developing the application, 
+          and creating system documentation. The solution improved workflow efficiency, centralized data management, and enhanced accessibility of K3 information for organizational use.</p>`,
+        highlights: [
+          { icon: '📐', label: 'Role', value: 'Sys Analyst & Dev' },
+          { icon: '🛡️', label: 'Domain', value: 'OHS / K3' }
+        ],
+        github: '#'
+      },
+      employee: {
+        title: 'Dashboard Employee Training Progress Monitoring',
+        meta: 'Jun 2025 · Data Analyst Intern',
+        tags: [
+          { label: 'Power BI', cls: 'tag-bi' },
+          { label: 'Power Query', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/employee-training.png', caption: 'Power BI Training Progress Dashboard' }
+        ],
+        description: `<p>Developed an <strong>interactive Power BI dashboard</strong> to visualize employee training progress. 
+                      I processed and consolidated thousands of records from<strong> multiple Excel datasets</strong>, performed data cleaning and transformation, and designed visual reports 
+                      to track training participation and completion rates. The dashboard improved data accessibility and enabled stakeholders to monitor training performance more efficiently.</p>`,
+        highlights: [
+          { icon: '📊', label: 'Tool', value: 'Power BI' },
+          { icon: '📈', label: 'Data', value: 'Multi-Department' }
+        ],
+        github: '#'
+      },
+      automation: {
+        title: 'Multifile Procurement Data Integration and Automation',
+        meta: 'Jun 2025 · Data Analyst Intern',
+        tags: [
+          { label: 'Python', cls: 'tag-py' },
+          { label: 'Pandas', cls: 'tag-py' }
+        ],
+        images: [
+          { src: 'assets/projects/before-after-automation.png', caption: 'Before & After Automation' },
+          { src: 'assets/projects/automation-code.png', caption: 'Automation Notebook' }
+        ],
+        description: `<p>Developed a <strong>Python based automation</strong> solution to integrate procurement data from <strong>multiple Excel</strong> files containing thousands of records.
+          The project addressed the inefficiency and risk of errors associated with manual data consolidation by automating data extraction, matching, and integration processes.</p>
+          <p>The solution significantly <strong>improved data processing efficiency and accuracy</strong>, and the work was subsequently published as a research article titled 
+          <i>Python Based Multifile Procurement Data Integration and Automation</i>.</p>`,
+        highlights: [
+          { icon: '🎯', label: 'Processing', value: '< 1 Hour' },
+          { icon: '📁', label: 'Automation', value: '10+ Files' }
+        ],
+        github: '#'
+      },
+      maison: {
+        title: 'E-Commerce Maison Sono Perfume',
+        meta: 'May 2025 · System Analyst & Fullstack',
+        tags: [
+          { label: 'Draw io', cls: 'tag-ml' },
+          { label: 'Laravel', cls: 'tag-ml' },
+          { label: 'JavaScript', cls: 'tag-ml' }
+        ],
+        images: [
+          { src: 'assets/projects/maison-login.png', caption: 'High-fidelity Login Page' },
+          { src: 'assets/projects/maison-quiz.png', caption: 'High-fidelity Quiz Rezult Page' },
+          { src: 'assets/projects/maison-product.png', caption: 'High-fidelity Product Page' }
+        ],
+        description: `<p>Developed an <strong>e-commerce website</strong> for Maison Sono Perfume to support product promotion and online sales. 
+          The project began with <strong>analyzing business requirements</strong> and user needs to design an intuitive shopping experience. </p>
+          <p>As a System Analyst, and UI/UX Designer, I was responsible for <strong>defining system workflows, implementing backend</strong>, and designing user interfaces. 
+          The platform was designed to improve product accessibility, streamline purchasing processes, and strengthen the brand's digital presence.</p>`,
+        highlights: [
+          { icon: '🛍️', label: 'Platform', value: 'E-Commerce' },
+          { icon: '💡', label: 'Stack', value: 'Laravel & MySQL' }
+        ],
+        github: '#'
+      }
+    };
+
+    // ── Certificate Modal Data ───────────────────────────────
+    const certData = {
+      ai_agent: {
+        title: 'Data - AI Agent for Data Analysis',
+        issuer: 'Hacktiv8 · IBM SkillsBuild',
+        id: 'IBM-HCK-2026-AI78',
+        date: 'July 2026',
+        icon: '🧠',
+        desc: 'Comprehensive specialization covering modern AI agents, prompt orchestration with Langflow, natural language querying of structured datasets, and automated executive reporting.',
+        skills: ['AI Agents', 'Langflow', 'Data Analysis', 'NLP', 'Automated Insights'],
+        verifyUrl: 'https://skillsbuild.org/'
+      },
+      power_bi: {
+        title: 'Microsoft Power BI Analyst (PL-300)',
+        issuer: 'Microsoft Certified: Power BI Data Analyst Associate',
+        id: 'MSFT-PL300-88412',
+        date: 'October 2023',
+        icon: '⚡',
+        desc: 'Demonstrated expertise in data preparation, DAX modeling, building enterprise Power BI dashboards, and enabling data-driven organizational decision making.',
+        skills: ['Power BI', 'DAX', 'Data Modeling', 'Power Query', 'Executive Dashboards'],
+        verifyUrl: 'https://learn.microsoft.com/'
+      },
+      ibm_ds: {
+        title: 'IBM Data Science Professional Certificate',
+        issuer: 'IBM · Coursera',
+        id: 'COURSERA-IBM-99120',
+        date: 'December 2022',
+        icon: '🔬',
+        desc: 'Completed multi-course professional curriculum in data science methodology, Python programming, relational databases, data visualization, and applied machine learning.',
+        skills: ['Python', 'SQL', 'Data Science Methodology', 'Machine Learning', 'Data Visualization'],
+        verifyUrl: 'https://coursera.org/'
+      },
+      tableau: {
+        title: 'Tableau Desktop Specialist',
+        issuer: 'Tableau Official Certification',
+        id: 'TAB-DS-76123',
+        date: 'May 2023',
+        icon: '📊',
+        desc: 'Validation of foundational and intermediate knowledge in Tableau Desktop for creating interactive reports, calculated fields, and business analytics stories.',
+        skills: ['Tableau', 'Business Analytics', 'Interactive Dashboards', 'Visual Analytics'],
+        verifyUrl: 'https://tableau.com/'
+      },
+      gcp_ace: {
+        title: 'Google Cloud Associate Cloud Engineer',
+        issuer: 'Google Cloud Certified',
+        id: 'GCP-ACE-44019',
+        date: 'March 2024',
+        icon: '☁️',
+        desc: 'Proficiency in deploying cloud-native applications, monitoring cloud resources, handling BigQuery data warehouses, and configuring identity & access solutions.',
+        skills: ['Google Cloud', 'BigQuery', 'Cloud Infrastructure', 'Data Pipelines'],
+        verifyUrl: 'https://cloud.google.com/'
+      },
+      ml_spec: {
+        title: 'Machine Learning Specialization',
+        issuer: 'DeepLearning.AI & Stanford University · Andrew Ng',
+        id: 'COURSERA-DLS-55214',
+        date: 'November 2022',
+        icon: '🤖',
+        desc: 'In-depth mastery of supervised learning (regression, classification, neural networks) and unsupervised learning (clustering, dimensionality reduction, recommender systems).',
+        skills: ['Machine Learning', 'Neural Networks', 'Scikit-learn', 'Optimization', 'Feature Engineering'],
+        verifyUrl: 'https://coursera.org/'
+      }
+    };
+
+    function openCertModal(key) {
+      const data = certData[key];
+      if (!data) return;
+      document.getElementById('certModalIcon').textContent = data.icon;
+      document.getElementById('certModalTitle').textContent = data.title;
+      document.getElementById('certModalIssuer').textContent = data.issuer;
+      document.getElementById('certModalId').textContent = data.id;
+      document.getElementById('certModalDate').textContent = data.date;
+      document.getElementById('certModalDesc').textContent = data.desc;
+      document.getElementById('certModalSkills').innerHTML = data.skills
+        .map(s => `<span class="tag tag-ml" style="font-size:0.75rem; padding:4px 10px;">${s}</span>`).join('');
+      document.getElementById('certModalVerifyBtn').href = data.verifyUrl;
+
+      const overlay = document.getElementById('certModal');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+      document.getElementById('certModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function handleCertOverlayClick(e) {
+      if (e.target === document.getElementById('certModal')) closeCertModal();
+    }
+
+    // ── Project Modal State & Handlers ───────────────────────
+    let currentSlide = 0;
+    let totalSlides = 0;
+
+    function openProjectModal(key) {
+      const data = projectData[key];
+      if (!data) return;
+
+      currentSlide = 0;
+      totalSlides = data.images.length;
+
+      // Build slider
+      const slider = document.getElementById('pmodalSlider');
+      slider.innerHTML = data.images.map((img, i) => `
+        <div class="pmodal-slide ${i === 0 ? 'active' : ''}">
+          <img src="${img.src || img.image}" alt="${img.caption}" class="pmodal-slide-img" onclick="window.open(this.src, '_blank')" title="Klik untuk lihat gambar ukuran penuh" />
+          <span class="pmodal-slide-caption">${img.caption}</span>
+        </div>
+      `).join('');
+
+      // Build dots
+      const dots = document.getElementById('pmodalDots');
+      dots.innerHTML = data.images.map((_, i) =>
+        `<button class="pmodal-dot ${i === 0 ? 'active' : ''}" onclick="goToSlide(${i})" aria-label="Slide ${i + 1}"></button>`
+      ).join('');
+
+      // Tags
+      document.getElementById('pmodalTags').innerHTML = data.tags
+        .map(t => `<span class="tag ${t.cls}">${t.label}</span>`).join('');
+
+      // Text
+      document.getElementById('pmodal-title').textContent = data.title;
+      document.getElementById('pmodalMeta').textContent = data.meta;
+      document.getElementById('pmodalBody').innerHTML = data.description;
+
+      // Highlights
+      document.getElementById('pmodalHighlights').innerHTML = `
+        <div class="pmodal-hl-grid">
+          ${data.highlights.map(h => `
+            <div class="pmodal-hl-item">
+              <span class="pmodal-hl-icon">${h.icon}</span>
+              <span class="pmodal-hl-value">${h.value}</span>
+              <span class="pmodal-hl-label">${h.label}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      // Actions
+      document.getElementById('pmodalActions').innerHTML = `
+        <a href="${data.github}" class="pmodal-btn" target="_blank" rel="noopener">
+          ⟨/⟩ &nbsp;View on GitHub
+        </a>
+      `;
+
+      // Show modal
+      const overlay = document.getElementById('projectModal');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+      document.getElementById('projectModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function handleModalOverlayClick(e) {
+      if (e.target === document.getElementById('projectModal')) closeProjectModal();
+    }
+
+    function slideProject(dir) {
+      goToSlide((currentSlide + dir + totalSlides) % totalSlides);
+    }
+
+    function goToSlide(idx) {
+      const slides = document.querySelectorAll('.pmodal-slide');
+      const dots = document.querySelectorAll('.pmodal-dot');
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = idx;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+
+    // Close on Escape
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        closeProjectModal();
+        closeCertModal();
+      }
+      if (e.key === 'ArrowLeft') slideProject(-1);
+      if (e.key === 'ArrowRight') slideProject(1);
+    });
   </script>
 </body>
 
