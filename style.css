@@ -660,6 +660,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   gap: 24px;
+  align-items: start;
 }
 
 .project-card {
@@ -755,7 +756,7 @@ img {
   font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.7;
-  margin-top: auto;
+  margin-top: 8px;
 }
 
 .project-footer {
@@ -1489,13 +1490,7 @@ footer strong {
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(26, 12, 16, 0.12);
   background-color: var(--white);
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.pmodal-slide-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 24px rgba(26, 12, 16, 0.18);
+  cursor: default;
 }
 
 .pmodal-slide-emoji {

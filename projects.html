@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="All Projects & Portfolio of Diyan Pebriyanti — Filter by Data Analyst, System Analyst, and Fullstack Developer." />
+  <meta name="description" content="All Projects & Portfolio of Diyan Pebriyanti" />
   <title>Projects | Diyan Pebriyanti</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon"
@@ -76,7 +75,10 @@
             📑 System Analyst <span class="filter-count" id="count-sa">2</span>
           </button>
           <button class="filter-btn" data-filter="fullstack" onclick="filterProjects('fullstack', this)">
-            💻 Fullstack Developer <span class="filter-count" id="count-fs">2</span>
+            💻 Fullstack Developer <span class="filter-count" id="count-fs">1</span>
+          </button>
+          <button class="filter-btn" data-filter="ui/ux" onclick="filterProjects('ui/ux', this)">
+            🎨 UI/UX Designer <span class="filter-count" id="count-ui">1</span>
           </button>
         </div>
         <span class="filter-result-info" id="filterResultInfo">Showing 6 projects</span>
@@ -94,15 +96,17 @@
             <span class="project-category-badge">Data Analyst</span>
             <h3 class="project-title">Multiplatform Sentiment Analysis</h3>
             <div class="project-tags">
-              <span class="tag tag-py">Python</span>
               <span class="tag tag-ml">Data Scraping</span>
-              <span class="tag tag-ml">NLP</span>
-              <span class="tag tag-ml">Deep Learning</span>
+              <span class="tag tag-ml">Data Understanding</span>
+              <span class="tag tag-ml">Data Preprocessing</span>
+              <span class="tag tag-ml">Data Transformation</span>
               <span class="tag tag-ml">Machine Learning</span>
+              <span class="tag tag-ml">Deep Learning</span>
             </div>
             <p class="project-desc">
-              Comparative sentiment analysis on 172,000+ comments across Facebook, Instagram, TikTok, X, and YouTube
-              with 95.2% accuracy.
+              Analyzed 172,050 comments from Facebook, Instagram, TikTok, X, and YouTube using Machine Learning and Deep
+              Learning models,
+              comparing model performance across multiple social media platforms for sentiment classification.
             </p>
           </div>
           <div class="project-footer">
@@ -121,14 +125,13 @@
             <span class="project-category-badge">Data Analyst</span>
             <h3 class="project-title">Develop an AI Agent using Langflow</h3>
             <div class="project-tags">
-              <span class="tag tag-ml">Langflow</span>
-              <span class="tag tag-ml">AI Agents</span>
               <span class="tag tag-ml">Business Analysis</span>
-              <span class="tag tag-ml">Automated Insights</span>
+              <span class="tag tag-ml">Business Understanding</span>
+              <span class="tag tag-ml">Langflow AI</span>
             </div>
             <p class="project-desc">
-              Automated AI agent parsing customer feedback CSV datasets to classify sentiments, extract core themes, and
-              generate executive summaries.
+              Developed an LLM based AI Agent using Langflow to automate the analysis of user provided text
+              through an integrated workflow for text extraction, prompt processing, and structured output generation.
             </p>
           </div>
           <div class="project-footer">
@@ -148,15 +151,14 @@
             <span class="project-category-badge">System Analyst &amp; Fullstack</span>
             <h3 class="project-title">Occupational Health and Safety (OHS) Information System</h3>
             <div class="project-tags">
-              <span class="tag tag-ml">Draw.io</span>
-              <span class="tag tag-ml">Process Modeling</span>
+              <span class="tag tag-ml">Business Workflow Design</span>
+              <span class="tag tag-ml">Data &amp; System Modeling</span>
               <span class="tag tag-py">Laravel</span>
-              <span class="tag tag-ml">JavaScript</span>
-              <span class="tag tag-sql">MySQL</span>
             </div>
             <p class="project-desc">
-              Web-based K3 service platform for PT. Katiga Veritas Indonesia featuring online certificate validation,
-              training management, and audit flows.
+              Web based OHS service platform, translating business requirements
+              into business processes, system workflows, and functional requirements to streamline OHS related
+              information management.
             </p>
           </div>
           <div class="project-footer">
@@ -169,15 +171,16 @@
         <!-- Project 4: Dashboard Employee Training Monitoring -->
         <div class="project-card reveal reveal-delay-1" data-category="data-analyst">
           <div class="project-thumb">
-            <img src="https://jobtrenurtika.wordpress.com/wp-content/uploads/2015/08/6.jpg"
+            <img
+              src="https://www.telkom.co.id/minio/show/data/image_upload/page/1594108255409_compress_logo%20telkom%20indonesia.png"
               alt="Dashboard Employee Training Progress Monitoring" loading="lazy" />
           </div>
           <div class="project-body">
             <span class="project-category-badge">Data Analyst</span>
             <h3 class="project-title">Dashboard Employee Training Progress Monitoring</h3>
             <div class="project-tags">
-              <span class="tag tag-bi">Power BI</span>
-              <span class="tag tag-ml">Power Query</span>
+              <span class="tag tag-ml">Business Analysis</span>
+              <span class="tag tag-ml">Power BI</span>
               <span class="tag tag-ml">Data Analysis</span>
               <span class="tag tag-ml">Data Preparation</span>
             </div>
@@ -196,7 +199,8 @@
         <!-- Project 5: Multifile Procurement Automation -->
         <div class="project-card reveal reveal-delay-2" data-category="data-analyst">
           <div class="project-thumb">
-            <img src="https://jobtrenurtika.wordpress.com/wp-content/uploads/2015/08/6.jpg"
+            <img
+              src="https://www.telkom.co.id/minio/show/data/image_upload/page/1594108255409_compress_logo%20telkom%20indonesia.png"
               alt="Multifile Procurement Data Integration and Automation" loading="lazy" />
           </div>
           <div class="project-body">
@@ -206,11 +210,12 @@
               <span class="tag tag-py">Python</span>
               <span class="tag tag-py">Pandas</span>
               <span class="tag tag-ml">Data Integration</span>
-              <span class="tag tag-ml">Automation</span>
+              <span class="tag tag-ml">Data Automation</span>
             </div>
             <p class="project-desc">
-              Automated Python data pipeline matching and integrating multi-spreadsheet procurement data, reducing
-              processing time to under 1 hour.
+              Automated the integration and processing of 10+ large scale Excel datasets
+              containing thousands of procurement records, reducing data preparation from hours
+              to under 1 hour while improving consistency and reducing manual processing.
             </p>
           </div>
           <div class="project-footer">
@@ -221,22 +226,21 @@
         </div>
 
         <!-- Project 6: Maison Sono Perfume -->
-        <div class="project-card reveal reveal-delay-3" data-category="system-analyst fullstack">
+        <div class="project-card reveal reveal-delay-3" data-category="system-analyst ui/ux">
           <div class="project-thumb">
             <img src="assets/projects/maison-perfume.jpg" alt="E-Commerce Maison Sono Perfume" loading="lazy" />
           </div>
           <div class="project-body">
-            <span class="project-category-badge">System Analyst &amp; Fullstack</span>
+            <span class="project-category-badge">System Analyst &amp; UI/UX Designer</span>
             <h3 class="project-title">E-Commerce Maison Sono Perfume</h3>
             <div class="project-tags">
               <span class="tag tag-ml">Workflow Design</span>
-              <span class="tag tag-ml">System Modeling</span>
+              <span class="tag tag-ml">Data Modeling</span>
               <span class="tag tag-py">Laravel</span>
-              <span class="tag tag-ml">JavaScript</span>
-              <span class="tag tag-sql">MySQL</span>
+              <span class="tag tag-ml">Prototyping</span>
             </div>
             <p class="project-desc">
-              Full lifecycle e-commerce solution starting from requirement analysis and user workflows to backend APIs,
+              Full lifecycle e-commerce solution starting from requirement analysis and user workflows to
               UI wireframes, and database modeling.
             </p>
           </div>
@@ -322,7 +326,8 @@
         'all': 'All Projects',
         'data-analyst': 'Data Analyst',
         'system-analyst': 'System Analyst',
-        'fullstack': 'Fullstack Developer'
+        'fullstack': 'Fullstack Developer',
+        'ui/ux': 'UI/UX Designer'
       };
 
       const filterInfo = document.getElementById('filterResultInfo');
@@ -335,26 +340,26 @@
     const projectData = {
       sentiment: {
         title: 'Multiplatform Sentiment Analysis',
-        meta: 'Aug 2026 · Accuracy 95.2% · Social Media Sentiment Analyst',
+        meta: 'Aug 2026 · Social Media Sentiment Analyst',
         tags: [
           { label: 'Python', cls: 'tag-py' },
           { label: 'NLP', cls: 'tag-ml' },
           { label: 'Deep Learning', cls: 'tag-ml' },
-          { label: 'Machine Learning', cls: 'tag-ml' }
+          { label: 'Machine Learning', cls: 'tag-ml' },
+          { label: 'Sentiment Analysis', cls: 'tag-ml' }
         ],
         images: [
           { src: 'assets/projects/skripsi1.png', caption: 'Multiplatform Data Distribution' },
-          { src: 'assets/projects/skripsi2.png', caption: 'Evaluation' },
-          { src: 'assets/projects/skripsi3.png', caption: 'Conclusion' }
+          { src: 'assets/projects/skripsi2.png', caption: 'Evaluation & Model Performance' },
+          { src: 'assets/projects/skripsi3.png', caption: 'Conclusion & Key Findings' }
         ],
-        description: `<p>Conducted sentiment analysis on over 172,000 social media comments from Facebook, Instagram, TikTok, X,
-              and YouTube, using Machine Learning & Deep Learning models to compare classification performance across social media
-              platforms.</p>`,
+        description: `<p>Analyzed 172,050 comments from Facebook, Instagram, TikTok, X, 
+          and YouTube to identify sentiment patterns across multiple social media platforms. 
+          The project covered data integration, exploratory data analysis, text preprocessing, 
+          pseudo-labeling, and feature extraction using IndoBERTweet.</p>
+          <p>Developed and evaluated LightGBM and BiLSTM models for sentiment classification, 
+            comparing their performance. Demonstrates applied Data Analytics, NLP, and Deep Learning on large-scale text data.</p>`,
         highlights: [
-          { icon: '🎯', label: 'Accuracy', value: '95.2%' },
-          { icon: '📦', label: 'Dataset', value: '172K rows' },
-          { icon: '🔢', label: 'Platform', value: '5 platforms' },
-          { icon: '⏱️', label: 'Project', value: 'Thesis' }
         ],
         github: 'https://github.com/diyanpe/multiplatform-sentiment-analysis.git'
       },
@@ -363,109 +368,109 @@
         meta: 'Aug 2026 · Bootcamp Hacktiv8-IBM',
         tags: [
           { label: 'Langflow', cls: 'tag-ml' },
-          { label: 'AI', cls: 'tag-ml' }
+          { label: 'AI Agent', cls: 'tag-ml' },
+          { label: 'Prompt Engineering', cls: 'tag-ml' },
+          { label: 'Sentiment Analysis', cls: 'tag-ml' }
         ],
         images: [
-          { src: 'assets/projects/langflow.png', caption: 'Langflow AI Agent' },
-          { src: 'assets/projects/langflow1.png', caption: 'Chatbot User Review' },
-          { src: 'assets/projects/langflow-ted.jpg', caption: 'Chatbot Youtube Sentiment Indonesian Podcast' },
-          { src: 'assets/projects/langflow-tcuc.jpg', caption: 'Chatbot Youtube Sentiment English Podcast' }
+          { src: 'assets/projects/langflow.png', caption: 'Langflow AI Agent Architecture' },
+          { src: 'assets/projects/langflow1.png', caption: 'Chatbot User Review Flow' },
+          { src: 'assets/projects/langflow-ted.jpg', caption: 'Indonesian Podcast Sentiment Chatbot' },
+          { src: 'assets/projects/langflow-tcuc.jpg', caption: 'English Podcast Sentiment Chatbot' }
         ],
-        description: `<p>An AI agent that analyzes customer feedback from CSV files to identify sentiment, key themes, and business insights automatically.</p>
-          <p>Developing an automated system for survey sentiment analysis, customer service complaint classification, executive-level business risk summaries, and actionable improvement recommendations.</p>`,
+        description: `<p>Developed an AI Agent using Langflow to build LLM-based workflows that process user inputs 
+          and generate structured responses while applying prompt engineering and structured output techniques to reduce AI hallucinations. 
+          Created two analytical workflows: a Product Review Analysis Flow to extract and summarize insights from product reviews, 
+          and a Sentiment Analysis Flow to analyze sentiment from YouTube videos.</p>`,
         highlights: [
-          { icon: '🤖', label: 'AI Flow', value: 'Langflow' },
-          { icon: '💬', label: 'Analysis', value: 'Automated' }
-        ],
-        github: '#'
+        ]
       },
       katiga: {
         title: 'Occupational Health and Safety (OHS) Service Information System',
         meta: 'Apr 2026 · System Analyst & Fullstack Developer',
         tags: [
-          { label: 'Draw io', cls: 'tag-py' },
+          { label: 'UML', cls: 'tag-py' },
+          { label: 'Requirements Analysis', cls: 'tag-py' },
+          { label: 'Business Process', cls: 'tag-py' },
           { label: 'Laravel', cls: 'tag-ml' },
           { label: 'JavaScript', cls: 'tag-ml' }
         ],
         images: [
-          { src: 'assets/projects/before-after-veritas.png', caption: 'Before & After Veritas Web' },
+          { src: 'assets/projects/before-after-veritas.png', caption: 'Benefits of Veritas Web System' },
+          { src: 'assets/projects/diagrams-veritas.png', caption: 'System Architecture & Diagrams' },
           { src: 'assets/projects/veritas1.png', caption: 'Landing Page' },
           { src: 'assets/projects/veritas2.png', caption: 'Training List Page' },
-          { src: 'assets/projects/veritas3.png', caption: 'Registration Flow Page' },
+          { src: 'assets/projects/veritas3.png', caption: 'Audit Registration Flow Page' },
           { src: 'assets/projects/veritas4.png', caption: 'Certificate Verification Page' }
         ],
-        description: `<p>Developed a web-based Occupational Health and Safety (K3) Information System for PT. Katiga Veritas Indonesia.
-          The platform supports training, company's audit, and consultation services while providing an online certificate validation feature for authenticity verification.</p>
-          <p>As a System Analyst, Fullstack Developer, and Technical Writer, I was responsible for gathering requirements, designing business processes, developing the application, 
-          and creating system documentation. The solution improved workflow efficiency, centralized data management, and enhanced accessibility of K3 information for organizational use.</p>`,
+        description: `<p>Designed and developed an Occupational Health and Safety (OHS) Information System 
+          to support the digitalization of workplace health and safety processes. As a System Analyst and Full-Stack Developer, 
+          I analyzed user needs, translated business requirements into system specifications, 
+          designed system workflows, and implemented the web-based solution.</p>`,
         highlights: [
-          { icon: '📐', label: 'Role', value: 'Sys Analyst & Dev' },
-          { icon: '🛡️', label: 'Domain', value: 'OHS / K3' }
-        ],
-        github: '#'
+        ]
       },
       employee: {
         title: 'Dashboard Employee Training Progress Monitoring',
         meta: 'Jun 2025 · Data Analyst Intern',
         tags: [
-          { label: 'Power BI', cls: 'tag-bi' },
-          { label: 'Power Query', cls: 'tag-ml' }
+          { label: 'Power BI', cls: 'tag-ml' },
+          { label: 'Power Query', cls: 'tag-ml' },
+          { label: 'Data Analysis', cls: 'tag-ml' },
+          { label: 'Data Visualization', cls: 'tag-ml' },
+          { label: 'Dashboard', cls: 'tag-ml' }
         ],
         images: [
           { src: 'assets/projects/employee-training.png', caption: 'Power BI Training Progress Dashboard' }
         ],
-        description: `<p>Developed an <strong>interactive Power BI dashboard</strong> to visualize employee training progress. 
-                      I processed and consolidated thousands of records from<strong> multiple Excel datasets</strong>, performed data cleaning and transformation, and designed visual reports 
-                      to track training participation and completion rates. The dashboard improved data accessibility and enabled stakeholders to monitor training performance more efficiently.</p>`,
+        description: `<p>Developed an Employee Training Progress Monitoring Dashboard to provide a 
+          clearer view of employee training activities and progress. The project involved data preparation 
+          and transformation using Power Query, followed by data analysis and interactive visualization to 
+          monitor training progress, completion status, and employee participation efficiently.</p>`,
         highlights: [
-          { icon: '📊', label: 'Tool', value: 'Power BI' },
-          { icon: '📈', label: 'Data', value: 'Multi-Department' }
-        ],
-        github: '#'
+        ]
       },
       automation: {
         title: 'Multifile Procurement Data Integration and Automation',
         meta: 'Jun 2025 · Data Analyst Intern',
         tags: [
           { label: 'Python', cls: 'tag-py' },
-          { label: 'Pandas', cls: 'tag-py' }
+          { label: 'Pandas', cls: 'tag-py' },
+          { label: 'Data Integration', cls: 'tag-ml' },
+          { label: 'Automation', cls: 'tag-ml' }
         ],
         images: [
-          { src: 'assets/projects/before-after-automation.png', caption: 'Before & After Automation' },
-          { src: 'assets/projects/automation-code.png', caption: 'Automation Notebook' }
+          { src: 'assets/projects/before-after-automation.png', caption: 'Benefits of Automation Workflow' },
+          { src: 'assets/projects/automation-code.png', caption: 'Python Automation Script' }
         ],
-        description: `<p>Developed a <strong>Python based automation</strong> solution to integrate procurement data from <strong>multiple Excel</strong> files containing thousands of records.
-          The project addressed the inefficiency and risk of errors associated with manual data consolidation by automating data extraction, matching, and integration processes.</p>
-          <p>The solution significantly <strong>improved data processing efficiency and accuracy</strong>, and the work was subsequently published as a research article titled 
-          <i>Python Based Multifile Procurement Data Integration and Automation</i>.</p>`,
+        description: `<p>Developed a Python based data integration and automation solution to streamline 
+          the processing of multiple Excel files containing procurement data. The previous manual process 
+          could take up to 8 hours and involved repetitive tasks with higher risk of human error.</p>
+          <p>The automated solution reduced the data preparation process from 8 hours to just a few minutes 
+            while guaranteeing data consistency across large datasets.</p>`,
         highlights: [
-          { icon: '🎯', label: 'Processing', value: '< 1 Hour' },
-          { icon: '📁', label: 'Automation', value: '10+ Files' }
-        ],
-        github: '#'
+        ]
       },
       maison: {
         title: 'E-Commerce Maison Sono Perfume',
-        meta: 'May 2025 · System Analyst & Fullstack',
+        meta: 'May 2025 · System Analyst & UI/UX Designer',
         tags: [
-          { label: 'Draw io', cls: 'tag-ml' },
-          { label: 'Laravel', cls: 'tag-ml' },
-          { label: 'JavaScript', cls: 'tag-ml' }
+          { label: 'ERD', cls: 'tag-ml' },
+          { label: 'Business Process', cls: 'tag-ml' },
+          { label: 'User Flow', cls: 'tag-ml' },
+          { label: 'Figma', cls: 'tag-ml' }
         ],
         images: [
+          { src: 'assets/projects/diagrams-maison.png', caption: 'ERD & Flow Business Process Diagram' },
           { src: 'assets/projects/maison-login.png', caption: 'High-fidelity Login Page' },
-          { src: 'assets/projects/maison-quiz.png', caption: 'High-fidelity Quiz Rezult Page' },
+          { src: 'assets/projects/maison-quiz.png', caption: 'High-fidelity Quiz Result Page' },
           { src: 'assets/projects/maison-product.png', caption: 'High-fidelity Product Page' }
         ],
-        description: `<p>Developed an <strong>e-commerce website</strong> for Maison Sono Perfume to support product promotion and online sales. 
-          The project began with <strong>analyzing business requirements</strong> and user needs to design an intuitive shopping experience. </p>
-          <p>As a System Analyst, and UI/UX Designer, I was responsible for <strong>defining system workflows, implementing backend</strong>, and designing user interfaces. 
-          The platform was designed to improve product accessibility, streamline purchasing processes, and strengthen the brand's digital presence.</p>`,
+        description: `<p>Designed an e-commerce system for Maison Sono Perfume, focusing on translating 
+          business requirements into a structured and user oriented digital solution. Worked on analyzing requirements, 
+          defining business processes, designing system structure, and developing user flows and interface concepts.</p>`,
         highlights: [
-          { icon: '🛍️', label: 'Platform', value: 'E-Commerce' },
-          { icon: '💡', label: 'Stack', value: 'Laravel & MySQL' }
-        ],
-        github: '#'
+        ]
       }
     };
 
@@ -484,7 +489,7 @@
       const slider = document.getElementById('pmodalSlider');
       slider.innerHTML = data.images.map((img, i) => `
         <div class="pmodal-slide ${i === 0 ? 'active' : ''}">
-          <img src="${img.src || img.image}" alt="${img.caption}" class="pmodal-slide-img" onclick="window.open(this.src, '_blank')" title="Klik untuk lihat gambar ukuran penuh" />
+          <img src="${img.src || img.image}" alt="${img.caption}" class="pmodal-slide-img" />
           <span class="pmodal-slide-caption">${img.caption}</span>
         </div>
       `).join('');
@@ -505,24 +510,32 @@
       document.getElementById('pmodalBody').innerHTML = data.description;
 
       // Highlights
-      document.getElementById('pmodalHighlights').innerHTML = `
-        <div class="pmodal-hl-grid">
-          ${data.highlights.map(h => `
-            <div class="pmodal-hl-item">
-              <span class="pmodal-hl-icon">${h.icon}</span>
-              <span class="pmodal-hl-value">${h.value}</span>
-              <span class="pmodal-hl-label">${h.label}</span>
-            </div>
-          `).join('')}
-        </div>
-      `;
+      if (data.highlights && data.highlights.length > 0) {
+        document.getElementById('pmodalHighlights').innerHTML = `
+          <div class="pmodal-hl-grid">
+            ${data.highlights.map(h => `
+              <div class="pmodal-hl-item">
+                <span class="pmodal-hl-icon">${h.icon}</span>
+                <span class="pmodal-hl-value">${h.value}</span>
+                <span class="pmodal-hl-label">${h.label}</span>
+              </div>
+            `).join('')}
+          </div>
+        `;
+      } else {
+        document.getElementById('pmodalHighlights').innerHTML = '';
+      }
 
       // Actions
-      document.getElementById('pmodalActions').innerHTML = `
-        <a href="${data.github}" class="pmodal-btn" target="_blank" rel="noopener">
-          ⟨/⟩ &nbsp;View on GitHub
-        </a>
-      `;
+      if (data.github) {
+        document.getElementById('pmodalActions').innerHTML = `
+          <a href="${data.github}" class="pmodal-btn" target="_blank" rel="noopener">
+            ⟨/⟩ &nbsp;View on GitHub
+          </a>
+        `;
+      } else {
+        document.getElementById('pmodalActions').innerHTML = '';
+      }
 
       // Show modal
       const overlay = document.getElementById('projectModal');
@@ -546,6 +559,7 @@
     function goToSlide(idx) {
       const slides = document.querySelectorAll('.pmodal-slide');
       const dots = document.querySelectorAll('.pmodal-dot');
+      if (slides.length === 0 || !slides[currentSlide]) return;
       slides[currentSlide].classList.remove('active');
       dots[currentSlide].classList.remove('active');
       currentSlide = idx;
