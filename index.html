@@ -284,9 +284,78 @@
         </p>
       </div>
 
+      <!-- Featured Skills Grid (Penjelasan Skill Utama) -->
+      <div class="featured-skills-grid reveal reveal-delay-1">
+        <!-- 1. Python -->
+        <div class="featured-skill-card">
+          <div class="featured-skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+              loading="lazy" />
+          </div>
+          <h3 class="featured-skill-title">Python</h3>
+          <p class="featured-skill-desc">
+            I use Python for data analysis, automation, and processing large datasets, developing efficient solutions
+            for data-driven decision making.
+          </p>
+        </div>
+
+        <!-- 2. Power BI -->
+        <div class="featured-skill-card">
+          <div class="featured-skill-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Power BI">
+              <path
+                d="M0 2.4C0 1.08 1.08 0 2.4 0h19.2C22.92 0 24 1.08 24 2.4v19.2c0 1.32-1.08 2.4-2.4 2.4H2.4C1.08 24 0 22.92 0 21.6z"
+                fill="#F2C811" />
+              <path d="M7 18V9h2v9zm3.5 0V6H13v12zm3.5 0v-7h2v7z" fill="#1a1a1a" />
+            </svg>
+          </div>
+          <h3 class="featured-skill-title">Power BI</h3>
+          <p class="featured-skill-desc">
+            I create interactive Power BI dashboards that transform complex data into clear, actionable insights for
+            better decision making.
+          </p>
+        </div>
+
+        <!-- 3. Draw.io -->
+        <div class="featured-skill-card">
+          <div class="featured-skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/draw-io.webp" alt="Draw.io"
+              loading="lazy" />
+          </div>
+          <h3 class="featured-skill-title">Draw.io</h3>
+          <p class="featured-skill-desc">
+            I use draw.io to create clear system diagrams, business processes, ERDs, and data flows to communicate
+            requirements effectively.
+          </p>
+        </div>
+
+        <!-- 4. SSMS -->
+        <div class="featured-skill-card">
+          <div class="featured-skill-icon">
+            <img
+              src="https://img.utdstc.com/icon/981/2d8/9812d89705787310adf08f0edf758921b8d551e8329c8d8c5eeabf4d06b08378:600"
+              alt="SSMS" loading="lazy" />
+          </div>
+          <h3 class="featured-skill-title">SSMS</h3>
+          <p class="featured-skill-desc">
+            I use SSMS to manage relational databases, write SQL queries, and optimize data retrieval for efficient data
+            management.
+          </p>
+        </div>
+      </div>
+
       <!-- 1-Row Infinite Moving Marquee (Right-to-Left) -->
-      <div class="tools-marquee-container reveal reveal-delay-1" id="toolsMarquee">
+      <div class="tools-marquee-container reveal reveal-delay-2" id="toolsMarquee">
         <div class="tools-marquee-track">
+
+          <!-- Item 1: draw io -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/draw-io.webp" alt="draw-io"
+                loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Draw.io</span>
+          </div>
 
           <!-- Item 1: Python -->
           <div class="skill-logo-card">
@@ -419,6 +488,16 @@
                 alt="JavaScript" loading="lazy" />
             </div>
             <span class="skill-logo-name">JavaScript</span>
+          </div>
+
+          <!-- Item 14: Figma -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2DcpDprhrJqAA4Ux0GXnTy79gS4K_n47P1rI0v3AXSLNbYv_hgIYwhCbH&s=10"
+                alt="Figma" loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Figma</span>
           </div>
 
           <!-- Duplicate Set for Seamless Infinite Loop (Identical Order & Items) -->
@@ -571,8 +650,9 @@
               <div class="cert-issuer">Hacktiv8 &nbsp;·&nbsp; 2026</div>
             </div>
           </div>
-          <button class="cert-view-btn" onclick="openCertModal('hacktiv8')"
-            aria-label="View AI Agent credential details">View ↗</button>
+          <a class="cert-view-btn"
+            href="https://drive.google.com/file/d/1Dg8yuGunSlAbtABJAx30Tke_XZ6At46-/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer" aria-label="View AI Agent credential details">View ↗</a>
         </div>
 
         <!-- 2. IBM -->
@@ -586,8 +666,9 @@
               <div class="cert-issuer">IBM &nbsp;·&nbsp; 2025</div>
             </div>
           </div>
-          <button class="cert-view-btn" onclick="openCertModal('ibm')"
-            aria-label="View IBM Data Fundamentals credential details">View ↗</button>
+          <a class="cert-view-btn"
+            href="https://drive.google.com/file/d/1FY9n_bCB3ZDQ8Zf0SUCNKqFk2wXUaA4H/view?usp=drive_link" target="_blank"
+            rel="noopener noreferrer" aria-label="View IBM Data Fundamentals credential details">View ↗</a>
         </div>
 
         <!-- 3. HackerRank -->
@@ -602,8 +683,8 @@
               <div class="cert-issuer">HackerRank &nbsp;·&nbsp; 2024</div>
             </div>
           </div>
-          <button class="cert-view-btn" onclick="openCertModal('hackerrank')"
-            aria-label="View HackerRank SQL Advanced credential details">View ↗</button>
+          <a class="cert-view-btn" href="https://www.hackerrank.com/certificates/70a7a8413988" target="_blank"
+            rel="noopener noreferrer" aria-label="View HackerRank SQL Advanced credential details">View ↗</a>
         </div>
 
         <!-- 4. Digitalent -->
@@ -617,8 +698,9 @@
               <div class="cert-issuer">Kominfo &nbsp;·&nbsp; Digitalent &nbsp;·&nbsp; 2024</div>
             </div>
           </div>
-          <button class="cert-view-btn" onclick="openCertModal('digitalent')"
-            aria-label="View Digitalent Python for Business credential details">View ↗</button>
+          <a class="cert-view-btn"
+            href="https://drive.google.com/file/d/1x4lFEaVPMnn-9pfzKalbtUhKy2pYbliK/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer" aria-label="View Digitalent Python for Business credential details">View ↗</a>
         </div>
       </div>
     </div>
@@ -775,53 +857,6 @@
       </div>
     </div>
   </section>
-
-  <!-- ===================== CERTIFICATE CREDENTIAL MODAL ===================== -->
-  <div class="pmodal-overlay" id="certModal" onclick="handleCertOverlayClick(event)">
-    <div class="cert-modal-box" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
-      <button class="pmodal-close" onclick="closeCertModal()" aria-label="Close modal">✕</button>
-      <div class="cert-modal-header">
-        <div class="cert-modal-icon" id="certModalIcon">🎓</div>
-        <div>
-          <h3 class="cert-modal-title" id="certModalTitle">Certificate Title</h3>
-          <p class="cert-modal-issuer" id="certModalIssuer">Issuer &amp; Year</p>
-        </div>
-      </div>
-
-      <div class="cert-modal-details">
-        <div class="cert-detail-row">
-          <span class="cert-detail-label">Credential Status:</span>
-          <span class="cert-detail-val" style="color:#2E7D32;">● Verified Certificate</span>
-        </div>
-        <div class="cert-detail-row">
-          <span class="cert-detail-label">Issued By:</span>
-          <span class="cert-detail-val" id="certModalId">Organization</span>
-        </div>
-        <div class="cert-detail-row">
-          <span class="cert-detail-label">Issued Date:</span>
-          <span class="cert-detail-val" id="certModalDate">2026</span>
-        </div>
-      </div>
-
-      <p class="cert-modal-desc" id="certModalDesc">
-        Credential description and covered capabilities.
-      </p>
-
-      <div>
-        <span
-          style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted);">Skills
-          Validated:</span>
-        <div class="cert-skills-badge-list" id="certModalSkills"></div>
-      </div>
-
-      <div class="cert-modal-actions" id="certModalActions">
-        <a href="#" class="pmodal-btn" id="certModalVerifyBtn" target="_blank" rel="noopener">
-          View Official Certificate ↗
-        </a>
-      </div>
-    </div>
-  </div>
-
   <!-- ===================== PROJECT MODAL ===================== -->
   <div class="pmodal-overlay" id="projectModal" onclick="handleModalOverlayClick(event)">
     <div class="pmodal" role="dialog" aria-modal="true" aria-labelledby="pmodal-title">
@@ -1028,14 +1063,17 @@
         ],
         images: [
           { src: 'assets/projects/langflow.png', caption: 'Langflow AI Agent Architecture' },
-          { src: 'assets/projects/langflow1.png', caption: 'Chatbot User Review Flow' },
+          { src: 'assets/projects/langflow1.png', caption: 'Chatbot Product Review' },
           { src: 'assets/projects/langflow-ted.jpg', caption: 'Indonesian Podcast Sentiment Chatbot' },
           { src: 'assets/projects/langflow-tcuc.jpg', caption: 'English Podcast Sentiment Chatbot' }
         ],
         description: `<p>Developed an AI Agent using Langflow to build LLM-based workflows that process user inputs 
           and generate structured responses while applying prompt engineering and structured output techniques to reduce AI hallucinations. 
           Created two analytical workflows: a Product Review Analysis Flow to extract and summarize insights from product reviews, 
-          and a Sentiment Analysis Flow to analyze sentiment from YouTube videos.</p>`,
+          and a Sentiment Analysis Flow to analyze sentiment from YouTube videos.</p>
+          <p>In the YouTube analysis, experiments were conducted on both Indonesian podcast videos and TED videos (English), 
+            where results showed more comprehensive and accurate insights in English due to the AI’s ability to better interpret 
+            both viewer comments and speaker transcripts.</p>`,
         highlights: [
         ]
       },
@@ -1051,16 +1089,16 @@
         ],
         images: [
           { src: 'assets/projects/before-after-veritas.png', caption: 'Benefits of Veritas Web System' },
-          { src: 'assets/projects/diagrams-veritas.png', caption: 'System Architecture & Diagrams' },
+          { src: 'assets/projects/diagrams-veritas.png', caption: 'Business Process Diagrams' },
           { src: 'assets/projects/veritas1.png', caption: 'Landing Page' },
           { src: 'assets/projects/veritas2.png', caption: 'Training List Page' },
           { src: 'assets/projects/veritas3.png', caption: 'Audit Registration Flow Page' },
           { src: 'assets/projects/veritas4.png', caption: 'Certificate Verification Page' }
         ],
         description: `<p>Designed and developed an Occupational Health and Safety (OHS) Information System 
-          to support the digitalization of workplace health and safety processes. As a System Analyst and Full-Stack Developer, 
+          to support the digitalization of processes at PT Katiga Veritas. As a System Analyst and Fullstack Developer, 
           I analyzed user needs, translated business requirements into system specifications, 
-          designed system workflows, and implemented the web-based solution.</p>`,
+          designed system workflows, and implemented the web based solution.</p>`,
         highlights: [
         ]
       },
@@ -1075,7 +1113,8 @@
           { label: 'Dashboard', cls: 'tag-ml' }
         ],
         images: [
-          { src: 'assets/projects/employee-training.png', caption: 'Power BI Training Progress Dashboard' }
+          { src: 'assets/projects/employee-training.png', caption: 'Power BI Training Progress Dashboard' },
+          { src: 'assets/projects/employee-training-flowchart.png', caption: 'Dashboard Development Flowchart' }
         ],
         description: `<p>Developed an Employee Training Progress Monitoring Dashboard to provide a 
           clearer view of employee training activities and progress. The project involved data preparation 
@@ -1097,9 +1136,9 @@
           { src: 'assets/projects/before-after-automation.png', caption: 'Benefits of Automation Workflow' },
           { src: 'assets/projects/automation-code.png', caption: 'Python Automation Script' }
         ],
-        description: `<p>Developed a Python based data integration and automation solution to streamline 
-          the processing of multiple Excel files containing procurement data. The previous manual process 
-          could take up to 8 hours and involved repetitive tasks with higher risk of human error.</p>
+        description: `<p>Developed a Python-based data integration and automation solution to streamline 
+          the processing of 10+ Excel files containing thousands of procurement records. The previous 
+          manual process could take up to 8 hours and involved repetitive tasks with a higher risk of human error.</p>
           <p>The automated solution reduced the data preparation process from 8 hours to just a few minutes 
             while guaranteeing data consistency across large datasets.</p>`,
         highlights: [
@@ -1127,77 +1166,6 @@
         ]
       }
     };
-
-    // ── Certificate Modal Data ───────────────────────────────
-    const certData = {
-      hacktiv8: {
-        title: 'AI Agent for Data Analysis',
-        issuer: 'Hacktiv8 · IBM SkillsBuild',
-        id: 'Hacktiv8 & IBM SkillsBuild',
-        date: '2026',
-        icon: '🧠',
-        desc: 'Specialization covering modern AI agents, prompt orchestration with Langflow, natural language querying of structured datasets, and automated reporting.',
-        skills: ['AI Agents', 'Langflow', 'Prompt Engineering', 'Data Analysis', 'NLP'],
-        verifyUrl: 'https://drive.google.com/file/d/1Dg8yuGunSlAbtABJAx30Tke_XZ6At46-/view?usp=sharing'
-      },
-      ibm: {
-        title: 'Data Fundamentals',
-        issuer: 'IBM',
-        id: 'IBM',
-        date: '2025',
-        icon: '🔬',
-        desc: 'Foundational certification covering data concepts, analytics methodology, data privacy, relational database basics, and analytical problem solving.',
-        skills: ['Data Analysis', 'Data Cleaning', 'Data Literacy', 'Relational Data'],
-        verifyUrl: 'https://drive.google.com/file/d/1FY9n_bCB3ZDQ8Zf0SUCNKqFk2wXUaA4H/view?usp=drive_link'
-      },
-      hackerrank: {
-        title: 'SQL (Advanced) Certificate',
-        issuer: 'HackerRank',
-        id: 'HackerRank',
-        date: '2024',
-        icon: '📊',
-        desc: 'Verified advanced mastery of SQL queries, complex JOINs, CTEs, window functions, aggregation, indexing, and query optimization.',
-        skills: ['SQL', 'Database Querying', 'Window Functions', 'Data Manipulation'],
-        verifyUrl: 'https://www.hackerrank.com/certificates/70a7a8413988'
-      },
-      digitalent: {
-        title: 'Python for Business',
-        issuer: 'Kominfo · Digitalent',
-        id: 'Kominfo Digitalent',
-        date: '2024',
-        icon: '🐍',
-        desc: 'Certification in Python programming applied to business analytics, covering Pandas, NumPy, data automation, and exploratory data visualization.',
-        skills: ['Python', 'Pandas', 'Business Analytics', 'Data Automation'],
-        verifyUrl: 'https://drive.google.com/file/d/1x4lFEaVPMnn-9pfzKalbtUhKy2pYbliK/view?usp=sharing'
-      }
-    };
-
-    function openCertModal(key) {
-      const data = certData[key];
-      if (!data) return;
-      document.getElementById('certModalIcon').textContent = data.icon;
-      document.getElementById('certModalTitle').textContent = data.title;
-      document.getElementById('certModalIssuer').textContent = data.issuer;
-      document.getElementById('certModalId').textContent = data.id;
-      document.getElementById('certModalDate').textContent = data.date;
-      document.getElementById('certModalDesc').textContent = data.desc;
-      document.getElementById('certModalSkills').innerHTML = data.skills
-        .map(s => `<span class="tag tag-ml" style="font-size:0.75rem; padding:4px 10px;">${s}</span>`).join('');
-      document.getElementById('certModalVerifyBtn').href = data.verifyUrl;
-
-      const overlay = document.getElementById('certModal');
-      overlay.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeCertModal() {
-      document.getElementById('certModal').classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    function handleCertOverlayClick(e) {
-      if (e.target === document.getElementById('certModal')) closeCertModal();
-    }
 
     // ── Project Modal State & Handlers ───────────────────────
     let currentSlide = 0;
@@ -1296,7 +1264,6 @@
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') {
         closeProjectModal();
-        closeCertModal();
       }
       if (e.key === 'ArrowLeft') slideProject(-1);
       if (e.key === 'ArrowRight') slideProject(1);
