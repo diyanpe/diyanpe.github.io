@@ -7,6 +7,11 @@
   <meta name="description"
     content="Portfolio of Diyan Pebriyanti — Data Analyst fresh graduate passionate about turning data into impactful business insights." />
   <title>Diyan Pebriyanti | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
@@ -26,7 +31,7 @@
 
   <!-- ===================== NAV ===================== -->
   <nav class="nav" id="mainNav">
-    <div class="container nav-inner">
+    <div class="nav-inner">
       <a href="#" class="nav-logo">Diyan<span>.</span></a>
       <ul class="nav-links">
         <li><a href="#projects" id="nav-projects">Projects</a></li>
@@ -43,40 +48,111 @@
 
   <!-- ===================== HERO ===================== -->
   <section class="hero" id="home">
-    <div class="container hero-content">
+    <!-- Ambient Glowing Blobs -->
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
 
-      <div class="hero-eyebrow">
-        <div class="hero-eyebrow-line"></div>
-        <span class="hero-eyebrow-text">Data Analyst &nbsp;·&nbsp; Jakarta, Indonesia</span>
-        <div class="hero-eyebrow-line"></div>
+    <!-- Playful Floating Dots & Sparkles -->
+    <span class="hero-dot p" style="width:42px;height:42px;left:4%;top:28%;"></span>
+    <span class="hero-dot" style="width:22px;height:22px;left:2.5%;top:58%;"></span>
+    <span class="hero-dot p" style="width:28px;height:28px;left:7%;bottom:18%;"></span>
+    <span class="hero-dot p" style="width:54px;height:54px;right:4%;top:24%;"></span>
+    <span class="hero-dot" style="width:24px;height:24px;right:3%;top:62%;"></span>
+    <span class="hero-dot p" style="width:36px;height:36px;right:8%;bottom:16%;"></span>
+    <span class="hero-sparkle" style="left:48%;top:18%;">✦</span>
+    <span class="hero-sparkle" style="right:45%;bottom:22%;">✦</span>
+    <span class="hero-sparkle" style="left:12%;top:75%;">✦</span>
+
+    <div class="container hero-layout">
+
+      <!-- Left Column: Copy & Actions -->
+      <div class="hero-copy">
+
+        <div class="hero-eyebrow">
+          <div class="hero-eyebrow-line"></div>
+          <span class="hero-eyebrow-text">Data Analyst &nbsp;·&nbsp; Jakarta, Indonesia</span>
+          <div class="hero-eyebrow-line"></div>
+        </div>
+
+        <h1 class="hero-title">
+          Hello, I'm
+          <span class="name">Diyan <em>Pebriyanti</em></span>
+        </h1>
+
+        <div class="hero-role-wrapper">
+          <span class="hero-role-badge">Information Systems Graduate &nbsp;·&nbsp; GPA 3.73</span>
+        </div>
+
+        <p class="hero-desc">
+          Turning data into actionable insights and meaningful solutions through analytics, business intelligence, and
+          <br> data-driven problem solving.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="assets/projects/CV_DiyanPebriyanti.pdf" class="hero-btn-primary" id="hero-download-cv" download>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download CV
+          </a>
+          <a href="#projects" class="hero-btn-secondary" id="hero-view-projects">
+            Explore Projects <span>↓</span>
+          </a>
+        </div>
+
+        <div class="hero-handnote">
+          <span>✦ turning raw data into visual stories</span>
+        </div>
       </div>
 
-      <h1 class="hero-title">
-        Hello, I'm
-        <span class="name">Diyan Pebriyanti</span>
-      </h1>
+      <!-- Right Column: Interactive Showcase Bento Card -->
+      <div class="hero-showcase">
+        <div class="hero-showcase-card">
+          <!-- Floating Playful Stickers -->
+          <div class="floating-sticker fs-top">✦ Data Storyteller</div>
+          <div class="floating-sticker fs-bottom">✨ Fresh Grad 2026</div>
 
-      <p class="hero-role">Information Systems Graduate &nbsp;·&nbsp; GPA 3.73</p>
+          <div class="showcase-header">
+            <div class="showcase-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="showcase-badge">Data Analyst Portfolio</span>
+          </div>
 
-      <p class="hero-desc">
-        Turning data into actionable insights and meaningful solutions through analytics, business intelligence, and
-        <br> data-driven problem solving.
-      </p>
+          <div class="showcase-stats-grid">
+            <div class="s-stat-box">
+              <span class="s-stat-val">172K<small>+</small></span>
+              <span class="s-stat-lbl">Comments Analyzed</span>
+            </div>
+            <div class="s-stat-box">
+              <span class="s-stat-val">3.73</span>
+              <span class="s-stat-lbl">Cumulative GPA</span>
+            </div>
+            <div class="s-stat-box full-width">
+              <div>
+                <span class="s-stat-val">8 hrs → mins</span>
+                <span class="s-stat-lbl">Multifile Procurement Automation</span>
+              </div>
+              <span style="font-size:1.8rem;">⚡</span>
+            </div>
+          </div>
 
-      <div class="hero-buttons">
-        <!-- <a href="#projects" class="hero-btn-primary" id="hero-view-projects">View Projects →</a> -->
-        <a href="assets/projects/CV_DiyanPebriyanti.pdf" class="hero-btn-outline" id="hero-download-cv"
-          download>Download CV</a>
-      </div>
-
-      <div class="hero-stats">
+          <div class="showcase-chips">
+            <span class="s-chip">✦ Python &amp; NLP</span>
+            <span class="s-chip">📊 Power BI &amp; DAX</span>
+            <span class="s-chip">💡 Machine Learning</span>
+            <span class="s-chip">⚙️ System Modeling</span>
+            <span class="s-chip">🗄️ SQL &amp; SSMS</span>
+          </div>
+        </div>
       </div>
 
     </div>
-
-
   </section>
-
 
   <!-- ===================== PROJECTS ===================== -->
   <section class="section projects" id="projects">
@@ -86,6 +162,7 @@
           <div class="section-eyebrow">
             <div class="section-eyebrow-line"></div>
             <span class="section-eyebrow-text">Portfolio</span>
+            <span class="handwritten-pill">✦ selected works</span>
           </div>
           <h2 class="section-title">Selected Projects</h2>
           <p class="section-desc">Real world challenges solved with a data driven approach.</p>
@@ -116,9 +193,10 @@
               <div class="project-thumb">
                 <img src="assets/projects/sentiment-analysis.png" alt="Multiplatform Sentiment Analysis"
                   loading="lazy" />
+                <span class="project-thumb-badge">Quick View ↗</span>
               </div>
               <div class="project-body">
-                <span class="project-category-badge">Data Analyst</span>
+                <span class="project-category-badge">📊 Data Analyst</span>
                 <h3 class="project-title">Multiplatform Sentiment Analysis</h3>
                 <div class="project-tags">
                   <span class="tag tag-ml">Data Scraping</span>
@@ -140,9 +218,10 @@
             <div class="project-card">
               <div class="project-thumb">
                 <img src="assets/projects/langflow.png" alt="Develop an AI Agent using Langflow" loading="lazy" />
+                <span class="project-thumb-badge">Quick View ↗</span>
               </div>
               <div class="project-body">
-                <span class="project-category-badge">Data Analyst</span>
+                <span class="project-category-badge">📊 Data Analyst</span>
                 <h3 class="project-title">Develop an AI Agent using Langflow</h3>
                 <div class="project-tags">
                   <span class="tag tag-ml">Business Analysis</span>
@@ -162,9 +241,10 @@
               <div class="project-thumb">
                 <img src="assets/projects/pt-katiga.png" alt="Occupational Health and Safety (OHS) Information System"
                   loading="lazy" />
+                <span class="project-thumb-badge">Quick View ↗</span>
               </div>
               <div class="project-body">
-                <span class="project-category-badge">System Analyst &amp; Fullstack</span>
+                <span class="project-category-badge">⚙️ System Analyst &amp; Fullstack</span>
                 <h3 class="project-title">Occupational Health and Safety (OHS) Information System</h3>
                 <div class="project-tags">
                   <span class="tag tag-ml">Business Workflow Design</span>
@@ -185,9 +265,10 @@
                 <img
                   src="https://www.telkom.co.id/minio/show/data/image_upload/page/1594108255409_compress_logo%20telkom%20indonesia.png"
                   alt="Dashboard Employee Training Progress Monitoring" loading="lazy" />
+                <span class="project-thumb-badge">Quick View ↗</span>
               </div>
               <div class="project-body">
-                <span class="project-category-badge">Data Analyst</span>
+                <span class="project-category-badge">📊 Data Analyst</span>
                 <h3 class="project-title">Dashboard Employee Training Progress Monitoring</h3>
                 <div class="project-tags">
                   <span class="tag tag-ml">Business Analysis</span>
@@ -209,9 +290,10 @@
                 <img
                   src="https://www.telkom.co.id/minio/show/data/image_upload/page/1594108255409_compress_logo%20telkom%20indonesia.png"
                   loading="lazy" />
+                <span class="project-thumb-badge">Quick View ↗</span>
               </div>
               <div class="project-body">
-                <span class="project-category-badge">Data Analyst</span>
+                <span class="project-category-badge">📊 Data Analyst</span>
                 <h3 class="project-title">Multifile Procurement Data Integration and Automation</h3>
                 <div class="project-tags">
                   <span class="tag tag-py">Python</span>
@@ -231,9 +313,10 @@
             <div class="project-card">
               <div class="project-thumb">
                 <img src="assets/projects/maison-perfume.jpg" alt="E-Commerce Maison Sono Perfume" loading="lazy" />
+                <span class="project-thumb-badge">Quick View ↗</span>
               </div>
               <div class="project-body">
-                <span class="project-category-badge">System Analyst &amp; UI/UX Designer</span>
+                <span class="project-category-badge">🎨 System Analyst &amp; UI/UX</span>
                 <h3 class="project-title">E-Commerce Maison Sono Perfume</h3>
                 <div class="project-tags">
                   <span class="tag tag-ml">Workflow Design</span>
@@ -276,6 +359,7 @@
           <div class="section-eyebrow">
             <div class="section-eyebrow-line"></div>
             <span class="section-eyebrow-text">Technical Skills</span>
+            <span class="handwritten-pill">✦ core stack</span>
           </div>
           <h2 class="section-title">Tech Stack &amp; Tools</h2>
         </div>
@@ -444,6 +528,26 @@
             <span class="skill-logo-name">Looker</span>
           </div>
 
+          <!-- Item 13: Tableau -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRaM2fHQaSCn_DCRMhCxqgKA5slPeY1Aa4yPaNmP5-jZklPUCiG82fqBLG&s=10"
+                alt="Tableau" loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Tableau</span>
+          </div>
+
+          <!-- Item 12: Excel -->
+          <div class="skill-logo-card">
+            <div class="skill-logo-img">
+              <img
+                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg/960px-Microsoft_Office_Excel_%282019%E2%80%932025%29.svg.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+                alt="Excel" loading="lazy" />
+            </div>
+            <span class="skill-logo-name">Excel</span>
+          </div>
+
           <!-- Item 10: MySQL -->
           <div class="skill-logo-card">
             <div class="skill-logo-img">
@@ -461,25 +565,6 @@
                 alt="SSMS" loading="lazy" />
             </div>
             <span class="skill-logo-name">SSMS</span>
-          </div>
-
-          <!-- Item 12: Git -->
-          <div class="skill-logo-card">
-            <div class="skill-logo-img">
-              <img
-                src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg/960px-Microsoft_Office_Excel_%282019%E2%80%932025%29.svg.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
-                alt="Excel" loading="lazy" />
-            </div>
-            <span class="skill-logo-name">Excel</span>
-          </div>
-
-          <!-- Item 13: Laravel -->
-          <div class="skill-logo-card">
-            <div class="skill-logo-img">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"
-                loading="lazy" />
-            </div>
-            <span class="skill-logo-name">Laravel</span>
           </div>
 
           <!-- Item 14: Figma -->
@@ -625,11 +710,29 @@
         <div class="section-eyebrow">
           <div class="section-eyebrow-line"></div>
           <span class="section-eyebrow-text">Certifications</span>
+          <span class="handwritten-pill">✦ verified credentials</span>
         </div>
         <h2 class="section-title">Credentials &amp; Courses</h2>
       </div>
 
       <div class="cert-grid">
+
+        <!-- 1. Simplilearn -->
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-main">
+            <div class="cert-icon cert-logo-ibm">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7pLob8faRUDwbfTmhGCsIbiEBlhCahwH3KktHLSLmQQ&s=10"
+                alt="simplilearn  Logo">
+            </div>
+            <div class="cert-info">
+              <div class="cert-name">Business Analytics with Excel</div>
+              <div class="cert-issuer">simplilearn &nbsp;·&nbsp; 2026</div>
+            </div>
+          </div>
+          <a class="cert-view-btn" href="https://simpli-web.app.link/e/33UPeleYF7b" target="_blank"
+            rel="noopener noreferrer" aria-label="View simplilearn">View ↗</a>
+        </div>
 
         <!-- 2. Forage -->
         <div class="cert-card reveal reveal-delay-2">
@@ -758,6 +861,7 @@
 
         <!-- Bio -->
         <div class="reveal">
+          <span class="about-sticker">✦ data + storytelling</span>
           <div class="section-eyebrow">
             <div class="section-eyebrow-line"></div>
             <span class="section-eyebrow-text">About Me</span>
@@ -797,12 +901,13 @@
           <div class="section-eyebrow">
             <div class="section-eyebrow-line"></div>
             <span class="section-eyebrow-text">Education &amp; Experience</span>
+            <span class="handwritten-pill">✦ journey</span>
           </div>
 
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-dot">🎓</div>
-              <div>
+              <div class="timeline-content">
                 <div class="timeline-degree">Bachelor Degree of Information Systems</div>
                 <div class="timeline-school">Institut Teknologi Nasional Bandung &nbsp;·&nbsp; GPA 3.73 / 4.00</div>
                 <div class="timeline-year">2022 – 2026</div>
@@ -810,7 +915,7 @@
             </div>
             <div class="timeline-item">
               <div class="timeline-dot">💼</div>
-              <div>
+              <div class="timeline-content">
                 <div class="timeline-degree">Data Analyst Intern</div>
                 <div class="timeline-school">PT Telkom Indonesia &nbsp;·&nbsp; Unit Group Procurement Center</div>
                 <div class="timeline-year">Jun – Aug 2025</div>
@@ -818,7 +923,7 @@
             </div>
             <div class="timeline-item">
               <div class="timeline-dot">💼</div>
-              <div>
+              <div class="timeline-content">
                 <div class="timeline-degree">Data Mining Practicum Assistant</div>
                 <div class="timeline-school">Institut Teknologi Nasional Bandung</div>
                 <div class="timeline-year">Feb – Jun 2026</div>
@@ -826,7 +931,7 @@
             </div>
             <div class="timeline-item">
               <div class="timeline-dot">💼</div>
-              <div>
+              <div class="timeline-content">
                 <div class="timeline-degree">Database II Practicum Assistant</div>
                 <div class="timeline-school">Institut Teknologi Nasional Bandung</div>
                 <div class="timeline-year">Feb – Jun 2025</div>
@@ -855,7 +960,10 @@
       </div>
 
       <div class="contact-card reveal reveal-delay-2">
-        <h3>Say Hello 👋</h3>
+        <div class="contact-card-blob"></div>
+        <span class="contact-sparkle cs-1">✦</span>
+        <span class="contact-sparkle cs-2">✦</span>
+        <h3>Say Hello <span class="waving-hand">👋</span></h3>
         <p>Interested in working together or just want to connect? Feel free to drop me a message. I'd love to hear from
           you!</p>
         <div class="contact-links">
@@ -899,6 +1007,14 @@
             <span>GitHub</span>
           </a>
         </div>
+        <div class="contact-extra">
+          <button class="copy-email-btn" onclick="copyEmailToClipboard()" id="copyEmailBtn"
+            aria-label="Copy email address">
+            <span>📋</span> <span id="copyEmailText">pebriyantidiyan@gmail.com</span>
+            <span class="copy-tooltip" id="copyTooltip">Click to Copy</span>
+          </button>
+        </div>
+        <div class="contact-handwritten">✦ usually replies within 24 hours</div>
       </div>
     </div>
   </section>
@@ -971,6 +1087,29 @@
     function closeMobileNav() { document.getElementById('mobileNav').classList.remove('open'); }
     document.getElementById('mobileNavClose').onclick = closeMobileNav;
 
+    // ── Copy Email Helper ────────────────────────────────────
+    function copyEmailToClipboard() {
+      const email = 'pebriyantidiyan@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const tooltip = document.getElementById('copyTooltip');
+        if (tooltip) {
+          tooltip.textContent = 'Copied to clipboard! ✨';
+          tooltip.style.opacity = '1';
+          setTimeout(() => {
+            tooltip.textContent = 'Click to Copy';
+            tooltip.style.opacity = '';
+          }, 2400);
+        }
+      }).catch(() => {
+        const tooltip = document.getElementById('copyTooltip');
+        if (tooltip) {
+          tooltip.textContent = 'Copied: pebriyantidiyan@gmail.com';
+          tooltip.style.opacity = '1';
+          setTimeout(() => { tooltip.style.opacity = ''; }, 2400);
+        }
+      });
+    }
+
     // ── Scroll Reveal ────────────────────────────────────────
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -978,7 +1117,7 @@
           entry.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
